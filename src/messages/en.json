@@ -118,28 +118,59 @@
     "description": "A clear five-step process, from our first conversation to the delivery of your project.",
     "learnMore": "Discover our process in detail",
     "stepLabel": "Step {number}",
+    "pointsLabel": "In practice",
     "steps": {
       "brief": {
         "title": "You tell us what you need",
-        "text": "Through the project request form or during a call, you present your idea, your context and your constraints."
+        "text": "Through the project request form or during a call, you present your idea, your context and your constraints.",
+        "points": {
+          "channel": "A project request form, or a call if you'd rather talk it through",
+          "documents": "Your specifications or mockups, if you already have them",
+          "constraints": "Your budget and timeline, even rough ones"
+        }
       },
       "analysis": {
         "title": "We analyse your project",
-        "text": "We clarify the features, constraints and goals, then propose a suitable solution."
+        "text": "We clarify the features, constraints and goals, then propose a suitable solution.",
+        "points": {
+          "scope": "Clarification of the features, constraints and goals",
+          "proposal": "A detailed proposal you can compare and understand",
+          "agreement": "Approval of the proposal and a contract before any work starts"
+        }
       },
       "build": {
         "title": "We build it or select the right experts",
-        "text": "Depending on the project, we build it ourselves or entrust it to the freelancers and agencies in our network whose skills match."
+        "text": "Depending on the project, we build it ourselves or entrust it to the freelancers and agencies in our network whose skills match.",
+        "points": {
+          "founder": "Built by the founder, when the project matches his skills",
+          "network": "Otherwise, selection of the right freelancers or agencies from our network",
+          "contract": "A single contract, with Aman & Partners, even when partners are involved"
+        }
       },
       "manage": {
         "title": "We manage the project",
-        "text": "Communication, follow-up and coordination: you keep one point of contact from start to finish."
+        "text": "Communication, follow-up and coordination: you keep one point of contact from start to finish.",
+        "points": {
+          "contact": "One point of contact throughout the project",
+          "progress": "Progress follow-up at every stage",
+          "coordination": "Coordination of everyone involved, with no effort on your side"
+        }
       },
       "deliver": {
         "title": "You receive your solution",
-        "text": "We deliver your project, with optional maintenance to keep it running and evolving."
+        "text": "We deliver your project, with optional maintenance to keep it running and evolving.",
+        "points": {
+          "quality": "A quality check by a developer before delivery",
+          "launch": "Delivery and launch of your solution",
+          "maintenance": "Optional maintenance to keep it running and evolving"
+        }
       }
     }
+  },
+  "MethodPage": {
+    "eyebrow": "Our process",
+    "title": "A clear process, from your needs to delivery.",
+    "description": "Five steps to turn your idea into a working solution, with one point of contact from start to finish."
   },
   "Advantages": {
     "eyebrow": "Why us",

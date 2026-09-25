@@ -118,28 +118,59 @@
     "description": "Un parcours clair, en cinq étapes, du premier échange à la livraison de votre projet.",
     "learnMore": "Découvrir notre méthode en détail",
     "stepLabel": "Étape {number}",
+    "pointsLabel": "Concrètement",
     "steps": {
       "brief": {
         "title": "Vous nous expliquez votre besoin",
-        "text": "Par le formulaire de demande de projet ou lors d'un appel, vous nous présentez votre idée, votre contexte et vos contraintes."
+        "text": "Par le formulaire de demande de projet ou lors d'un appel, vous nous présentez votre idée, votre contexte et vos contraintes.",
+        "points": {
+          "channel": "Un formulaire de demande de projet, ou un appel si vous préférez en parler",
+          "documents": "Votre cahier des charges ou vos maquettes, si vous en avez déjà",
+          "constraints": "Votre budget et vos délais, même approximatifs"
+        }
       },
       "analysis": {
         "title": "Nous analysons votre projet",
-        "text": "Nous précisons les fonctionnalités, les contraintes et les objectifs, puis nous vous proposons une solution adaptée."
+        "text": "Nous précisons les fonctionnalités, les contraintes et les objectifs, puis nous vous proposons une solution adaptée.",
+        "points": {
+          "scope": "Clarification des fonctionnalités, des contraintes et des objectifs",
+          "proposal": "Une proposition détaillée, que vous pouvez comparer et comprendre",
+          "agreement": "Validation de la proposition et contrat avant tout démarrage"
+        }
       },
       "build": {
         "title": "Nous réalisons ou sélectionnons les experts adaptés",
-        "text": "Selon le projet, nous le réalisons nous-mêmes ou le confions aux freelances et agences de notre réseau dont les compétences correspondent."
+        "text": "Selon le projet, nous le réalisons nous-mêmes ou le confions aux freelances et agences de notre réseau dont les compétences correspondent.",
+        "points": {
+          "founder": "Réalisation par le fondateur, quand le projet correspond à ses compétences",
+          "network": "Sinon, sélection des freelances ou agences adaptés dans notre réseau",
+          "contract": "Un seul contrat, avec Aman & Partners, même quand des partenaires interviennent"
+        }
       },
       "manage": {
         "title": "Nous pilotons le projet",
-        "text": "Communication, suivi et coordination\u00a0: vous gardez un seul interlocuteur, du début à la fin."
+        "text": "Communication, suivi et coordination\u00a0: vous gardez un seul interlocuteur, du début à la fin.",
+        "points": {
+          "contact": "Un seul interlocuteur pendant tout le projet",
+          "progress": "Un suivi de l'avancement à chaque étape",
+          "coordination": "La coordination de tous les intervenants, sans effort de votre part"
+        }
       },
       "deliver": {
         "title": "Vous recevez votre solution",
-        "text": "Nous vous livrons votre projet, avec une maintenance possible pour le faire vivre et évoluer."
+        "text": "Nous vous livrons votre projet, avec une maintenance possible pour le faire vivre et évoluer.",
+        "points": {
+          "quality": "Un contrôle de la qualité par un développeur avant la livraison",
+          "launch": "La livraison et la mise en ligne de votre solution",
+          "maintenance": "Une maintenance possible pour la faire vivre et évoluer"
+        }
       }
     }
+  },
+  "MethodPage": {
+    "eyebrow": "Notre méthode",
+    "title": "Une méthode claire, de votre besoin à la livraison.",
+    "description": "Cinq étapes pour transformer votre idée en solution concrète, avec un seul interlocuteur du début à la fin."
   },
   "Advantages": {
     "eyebrow": "Pourquoi nous",
