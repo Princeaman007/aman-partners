@@ -2,12 +2,10 @@ import { Plus } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { FAQ_ITEMS } from "@/content/faq";
 import { Link } from "@/i18n/navigation";
 
 const TITLE_ID = "faq-title";
-
-/** Questions affichées, dans l'ordre (textes dans « FAQ.items »). Provisoire : remplacé à l'étape 4.1 par src/content/faq.ts. */
-const QUESTIONS = ["cost", "inHouse", "ownSpecs", "manager", "maintenance"] as const;
 
 export async function FAQ() {
   const t = await getTranslations("FAQ");
@@ -33,7 +31,7 @@ export async function FAQ() {
         />
 
         <div className="divide-y divide-border border-y border-border lg:col-span-8">
-          {QUESTIONS.map((key) => (
+          {FAQ_ITEMS.map(({ key }) => (
             <details key={key} className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 rounded-sm py-6 text-left font-semibold tracking-tight focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground [&::-webkit-details-marker]:hidden">
                 {t(`items.${key}.question`)}

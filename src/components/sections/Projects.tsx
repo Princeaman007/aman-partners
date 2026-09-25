@@ -2,29 +2,13 @@ import Image from "next/image";
 import ExternalLink from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import shopeasyScreenshot from "@/assets/projects/shopeasy-ci.png";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { FEATURED_PROJECTS } from "@/content/projects";
 
 const TITLE_ID = "projects-title";
-
-/**
- * Projets mis en avant sur l'accueil (textes dans « Projects.items »).
- * Uniquement de vrais projets. Provisoire : remplacé à l'étape 4.1 par src/content/projects.ts.
- */
-const FEATURED_PROJECTS = [
-  {
-    key: "shopeasy",
-    name: "ShopEasy CI",
-    url: "https://shopeasyci.store",
-    domain: "shopeasyci.store",
-    isLive: true,
-    image: shopeasyScreenshot,
-    features: ["subscriptions", "themes", "assistant", "dashboard"],
-  },
-] as const;
 
 export async function Projects() {
   const t = await getTranslations("Projects");

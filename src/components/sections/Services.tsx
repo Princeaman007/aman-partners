@@ -1,31 +1,12 @@
-import {
-  Globe,
-  LayoutDashboard,
-  Smartphone,
-  Workflow,
-  Wrench,
-  type LucideIcon,
-} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { PRIMARY_CTA_HREF } from "@/components/layout/navigation";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { Card, CardDescription, CardTitle } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SERVICES } from "@/content/services";
 
 const TITLE_ID = "services-title";
-
-/**
- * Les cinq services, dans l'ordre du cahier des charges (textes dans « Services.items »).
- * Provisoire : remplacé à l'étape 4.1 par le fichier de contenu src/content/services.ts.
- */
-const SERVICES = [
-  { key: "web", icon: Globe },
-  { key: "mobile", icon: Smartphone },
-  { key: "software", icon: LayoutDashboard },
-  { key: "automation", icon: Workflow },
-  { key: "maintenance", icon: Wrench },
-] as const satisfies ReadonlyArray<{ key: string; icon: LucideIcon }>;
 
 export async function Services() {
   const t = await getTranslations("Services");
