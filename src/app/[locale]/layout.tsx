@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { CookieBanner } from "@/components/layout/CookieBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/SkipLink";
@@ -54,6 +55,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <body className="flex min-h-dvh flex-col">
         <NextIntlClientProvider>
           <SkipLink />
+          <CookieBanner />
           <Header />
           <main id={MAIN_CONTENT_ID} tabIndex={-1} className="flex-1 outline-none">
             {children}

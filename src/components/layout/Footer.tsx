@@ -5,6 +5,7 @@ import { Logo } from "@/components/brand/Logo";
 import { Container } from "@/components/ui/Container";
 import { COMPANY, isPlaceholder, toPhoneHref } from "@/content/company";
 import { Link } from "@/i18n/navigation";
+import { CookieSettingsButton } from "./CookieSettingsButton";
 import { CONTACT_HREF, LEGAL_NAV, MAIN_NAV, PARTNERS_HREF } from "./navigation";
 
 const LINK_CLASSES =
@@ -126,6 +127,11 @@ export async function Footer() {
                     <FooterLink href={item.href}>{t(item.labelKey)}</FooterLink>
                   </li>
                 ))}
+                <li>
+                  <CookieSettingsButton className={`cursor-pointer text-left ${LINK_CLASSES}`}>
+                    {t("manageCookies")}
+                  </CookieSettingsButton>
+                </li>
               </ul>
             </FooterColumn>
           </nav>
