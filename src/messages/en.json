@@ -15,6 +15,14 @@
     "selected": "Selected file:",
     "remove": "Remove file"
   },
+  "ThemeToggle": {
+    "label": "Switch theme"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "fr": "Français",
+    "en": "English"
+  },
   "Styleguide": {
     "title": "Components",
     "description": "Internal component test page, available in development only.",
@@ -67,6 +75,7 @@
     "consentLabel": "I agree that my data will be used to process my request, in accordance with the <link>privacy policy</link>.",
     "consentError": "Please accept to send your request.",
     "fieldAttachment": "Attachment",
-    "fieldAttachmentHint": "PDF, DOCX, PNG or JPG, 10 MB maximum."
+    "fieldAttachmentHint": "PDF, DOCX, PNG or JPG, 10 MB maximum.",
+    "themeLanguage": "Theme and language"
   }
 }

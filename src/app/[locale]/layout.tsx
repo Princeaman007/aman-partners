@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ThemeScript } from "@/components/layout/ThemeScript";
 import { routing } from "@/i18n/routing";
 import { instrumentSerif, manrope } from "../fonts";
 import "../globals.css";
@@ -39,7 +40,14 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${manrope.variable} ${instrumentSerif.variable}`}>
+    <html
+      lang={locale}
+      className={`${manrope.variable} ${instrumentSerif.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <ThemeScript />
+      </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

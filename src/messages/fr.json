@@ -15,6 +15,14 @@
     "selected": "Fichier sélectionné\u00a0:",
     "remove": "Retirer le fichier"
   },
+  "ThemeToggle": {
+    "label": "Changer de thème"
+  },
+  "LanguageSwitcher": {
+    "label": "Langue",
+    "fr": "Français",
+    "en": "English"
+  },
   "Styleguide": {
     "title": "Composants",
     "description": "Page interne de test des composants, disponible uniquement en développement.",
@@ -67,6 +75,7 @@
     "consentLabel": "J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la <link>politique de confidentialité</link>.",
     "consentError": "Veuillez accepter pour envoyer votre demande.",
     "fieldAttachment": "Pièce jointe",
-    "fieldAttachmentHint": "PDF, DOCX, PNG ou JPG, 10\u00a0Mo maximum."
+    "fieldAttachmentHint": "PDF, DOCX, PNG ou JPG, 10\u00a0Mo maximum.",
+    "themeLanguage": "Thème et langue"
   }
 }

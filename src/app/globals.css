@@ -5,6 +5,21 @@
  * Ces valeurs ne s'utilisent pas directement dans les composants :
  * on passe toujours par les couleurs de thème définies plus bas.
  */
+
+/*
+ * Variante dark: de Tailwind, active en thème sombre choisi manuellement,
+ * ou en thème sombre du système si le visiteur n'a pas choisi le thème clair.
+ */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+}
 :root {
   --noir: #0a0a0a;
   --graphite: #171717;
