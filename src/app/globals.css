@@ -1,17 +1,78 @@
-/*
- * Styles globaux.
- * Tailwind CSS et les variables des thèmes clair et sombre
- * seront ajoutés à l'étape 0.2.
- */
+@import "tailwindcss";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/*
+ * Palette de la charte graphique, strictement monochrome.
+ * Ces valeurs ne s'utilisent pas directement dans les composants :
+ * on passe toujours par les couleurs de thème définies plus bas.
+ */
+:root {
+  --noir: #0a0a0a;
+  --graphite: #171717;
+  --ardoise: #525252;
+  --gris: #a3a3a3;
+  --brume: #e5e5e5;
+  --blanc: #fafafa;
+
+  /* Thème clair (par défaut) */
+  color-scheme: light;
+  --background: var(--blanc);
+  --foreground: var(--noir);
+  --muted: var(--ardoise);
+  --surface: var(--blanc);
+  --border: var(--brume);
+  --border-strong: var(--ardoise);
+  --primary: var(--noir);
+  --primary-foreground: var(--blanc);
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+/* Thème sombre selon la préférence du système, sauf choix manuel du thème clair */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --background: var(--noir);
+    --foreground: var(--blanc);
+    --muted: var(--gris);
+    --surface: var(--graphite);
+    --border: var(--graphite);
+    --border-strong: var(--gris);
+    --primary: var(--blanc);
+    --primary-foreground: var(--noir);
+  }
+}
+
+/* Thème sombre choisi manuellement (bouton de bascule, étape 1.4) */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: var(--noir);
+  --foreground: var(--blanc);
+  --muted: var(--gris);
+  --surface: var(--graphite);
+  --border: var(--graphite);
+  --border-strong: var(--gris);
+  --primary: var(--blanc);
+  --primary-foreground: var(--noir);
+}
+
+/* Supprime toutes les couleurs par défaut de Tailwind (bleu, rouge, vert...) */
+@theme {
+  --color-*: initial;
+}
+
+/* Seules couleurs disponibles dans le projet */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
 }
