@@ -5,6 +5,7 @@
   },
   "HomePage": {
     "title": "Aman & Partners",
-    "tagline": "Your digital project. The right experts. One point of contact."
+    "tagline": "Your digital project. The right experts. One point of contact.",
+    "switchLocale": "Version française"
   }
 }

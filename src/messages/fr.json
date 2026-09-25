@@ -5,6 +5,7 @@
   },
   "HomePage": {
     "title": "Aman & Partners",
-    "tagline": "Votre projet digital. Les bons experts. Un seul interlocuteur."
+    "tagline": "Votre projet digital. Les bons experts. Un seul interlocuteur.",
+    "switchLocale": "English version"
   }
 }
