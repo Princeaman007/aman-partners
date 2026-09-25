@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Header } from "@/components/layout/Header";
+import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/SkipLink";
 import { ThemeScript } from "@/components/layout/ThemeScript";
 import { routing } from "@/i18n/routing";
 import { instrumentSerif, manrope } from "../fonts";
@@ -49,7 +51,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <ThemeScript />
       </head>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <SkipLink />
+          <Header />
+          <main id={MAIN_CONTENT_ID} tabIndex={-1} className="outline-none">
+            {children}
+          </main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

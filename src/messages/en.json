@@ -23,6 +23,16 @@
     "fr": "Français",
     "en": "English"
   },
+  "Navigation": {
+    "main": "Main navigation",
+    "home": "Aman & Partners, back to home",
+    "skipToContent": "Skip to main content",
+    "services": "Services",
+    "method": "Our process",
+    "work": "Work",
+    "about": "About",
+    "cta": "Tell us about your project"
+  },
   "Styleguide": {
     "title": "Components",
     "description": "Internal component test page, available in development only.",
