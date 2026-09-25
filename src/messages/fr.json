@@ -7,5 +7,11 @@
     "title": "Aman & Partners",
     "tagline": "Votre projet digital. Les bons experts. Un seul interlocuteur.",
     "switchLocale": "English version"
+  },
+  "Styleguide": {
+    "title": "Composants",
+    "description": "Page interne de test des composants, disponible uniquement en développement.",
+    "symbol": "Symbole",
+    "logo": "Logo"
   }
 }
