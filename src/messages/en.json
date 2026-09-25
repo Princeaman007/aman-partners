@@ -130,6 +130,61 @@
       }
     }
   },
+  "Projects": {
+    "eyebrow": "Work",
+    "title": "Real projects, in real conditions.",
+    "description": "Platforms designed and built by the founder of Aman & Partners.",
+    "viewAll": "View all our work",
+    "live": "Live",
+    "featuresLabel": "Features",
+    "visitSite": "Visit {domain}",
+    "newTab": "(opens in a new tab)",
+    "items": {
+      "shopeasy": {
+        "category": "E-commerce SaaS",
+        "text": "Multi-tenant e-commerce SaaS platform that lets merchants in Côte d'Ivoire open and manage their online store.",
+        "imageAlt": "Screenshot of the ShopEasy CI platform",
+        "features": {
+          "subscriptions": "Subscription plans",
+          "themes": "Multi-theme storefronts",
+          "assistant": "Built-in AI assistant",
+          "dashboard": "Admin dashboard"
+        }
+      }
+    }
+  },
+  "FAQ": {
+    "eyebrow": "FAQ",
+    "title": "Your questions, answered",
+    "description": "Can't find your answer? <link>Contact us</link>.",
+    "items": {
+      "cost": {
+        "question": "How much does a project cost?",
+        "answer": "The price depends on the scope, features, technologies and timeline. Once we have analysed your needs, we send you a detailed proposal, so you know exactly what is included before you commit."
+      },
+      "inHouse": {
+        "question": "Do you build the projects yourselves?",
+        "answer": "It depends on the project. The founder, a full-stack developer, builds some projects himself. For others, or for specific skills, we work with selected freelancers and agencies from our network. Either way, Aman & Partners remains your point of contact and checks the quality of the work delivered."
+      },
+      "ownSpecs": {
+        "question": "Can I come with my own specifications?",
+        "answer": "Yes. We review them, ask the questions we need and complete them if necessary. You can attach them directly to the project request form."
+      },
+      "manager": {
+        "question": "Who manages the project?",
+        "answer": "Aman & Partners. We handle communication, follow-up and coordination with the experts, from analysis to delivery: you have one point of contact."
+      },
+      "maintenance": {
+        "question": "Do you provide maintenance?",
+        "answer": "Yes. After delivery, we can handle fixes, improvements, security and technical support for your solution."
+      }
+    }
+  },
+  "FinalCTA": {
+    "title": "Have an idea? <accent>Let's turn it into a project.</accent>",
+    "description": "Tell us what you need: we analyse it and get back to you with a suitable proposal.",
+    "button": "Start my project"
+  },
   "FileUpload": {
     "choose": "Choose a file",
     "change": "Change file",

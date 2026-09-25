@@ -130,6 +130,61 @@
       }
     }
   },
+  "Projects": {
+    "eyebrow": "Réalisations",
+    "title": "Des projets réels, en conditions réelles.",
+    "description": "Des plateformes conçues et développées par le fondateur d'Aman & Partners.",
+    "viewAll": "Voir toutes les réalisations",
+    "live": "En production",
+    "featuresLabel": "Fonctionnalités",
+    "visitSite": "Visiter {domain}",
+    "newTab": "(s'ouvre dans un nouvel onglet)",
+    "items": {
+      "shopeasy": {
+        "category": "SaaS e-commerce",
+        "text": "Plateforme SaaS e-commerce multitenant qui permet aux commerçants ivoiriens d'ouvrir et de gérer leur boutique en ligne.",
+        "imageAlt": "Capture d'écran de la plateforme ShopEasy CI",
+        "features": {
+          "subscriptions": "Formules d'abonnement",
+          "themes": "Boutiques multi-thèmes",
+          "assistant": "Assistant IA intégré",
+          "dashboard": "Tableau de bord d'administration"
+        }
+      }
+    }
+  },
+  "FAQ": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Vos questions, nos réponses",
+    "description": "Vous ne trouvez pas votre réponse\u00a0? <link>Contactez-nous</link>.",
+    "items": {
+      "cost": {
+        "question": "Combien coûte un projet\u00a0?",
+        "answer": "Le prix dépend du périmètre, des fonctionnalités, des technologies et des délais. Après avoir analysé votre besoin, nous vous remettons une proposition détaillée, pour que vous sachiez exactement ce qui est compris avant de vous engager."
+      },
+      "inHouse": {
+        "question": "Réalisez-vous les projets vous-mêmes\u00a0?",
+        "answer": "Cela dépend du projet. Le fondateur, développeur full-stack, réalise lui-même une partie des projets. Pour les autres, ou pour des compétences spécifiques, nous faisons appel à des freelances et agences sélectionnés dans notre réseau. Dans tous les cas, Aman & Partners reste votre interlocuteur et contrôle la qualité du travail livré."
+      },
+      "ownSpecs": {
+        "question": "Puis-je venir avec mon propre cahier des charges\u00a0?",
+        "answer": "Oui. Nous l'étudions, vous posons les questions nécessaires et le complétons si besoin. Vous pouvez le joindre directement au formulaire de demande de projet."
+      },
+      "manager": {
+        "question": "Qui gère le projet\u00a0?",
+        "answer": "Aman & Partners. Nous assurons la communication, le suivi et la coordination avec les experts, de l'analyse à la livraison\u00a0: vous n'avez qu'un seul interlocuteur."
+      },
+      "maintenance": {
+        "question": "Faites-vous la maintenance\u00a0?",
+        "answer": "Oui. Après la livraison, nous pouvons assurer les corrections, les évolutions, la sécurité et le support technique de votre solution."
+      }
+    }
+  },
+  "FinalCTA": {
+    "title": "Vous avez une idée\u00a0? <accent>Transformons-la en projet.</accent>",
+    "description": "Décrivez-nous votre besoin\u00a0: nous l'analysons et revenons vers vous avec une proposition adaptée.",
+    "button": "Démarrer mon projet"
+  },
   "FileUpload": {
     "choose": "Choisir un fichier",
     "change": "Changer de fichier",
