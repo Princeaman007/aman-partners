@@ -69,6 +69,67 @@
       "text": "Décrivez-nous votre projet\u00a0: nous vous dirons comment le réaliser."
     }
   },
+  "Method": {
+    "eyebrow": "Notre méthode",
+    "title": "Comment ça fonctionne",
+    "description": "Un parcours clair, en cinq étapes, du premier échange à la livraison de votre projet.",
+    "learnMore": "Découvrir notre méthode en détail",
+    "stepLabel": "Étape {number}",
+    "steps": {
+      "brief": {
+        "title": "Vous nous expliquez votre besoin",
+        "text": "Par le formulaire de demande de projet ou lors d'un appel, vous nous présentez votre idée, votre contexte et vos contraintes."
+      },
+      "analysis": {
+        "title": "Nous analysons votre projet",
+        "text": "Nous précisons les fonctionnalités, les contraintes et les objectifs, puis nous vous proposons une solution adaptée."
+      },
+      "build": {
+        "title": "Nous réalisons ou sélectionnons les experts adaptés",
+        "text": "Selon le projet, nous le réalisons nous-mêmes ou le confions aux freelances et agences de notre réseau dont les compétences correspondent."
+      },
+      "manage": {
+        "title": "Nous pilotons le projet",
+        "text": "Communication, suivi et coordination\u00a0: vous gardez un seul interlocuteur, du début à la fin."
+      },
+      "deliver": {
+        "title": "Vous recevez votre solution",
+        "text": "Nous vous livrons votre projet, avec une maintenance possible pour le faire vivre et évoluer."
+      }
+    }
+  },
+  "Advantages": {
+    "eyebrow": "Pourquoi nous",
+    "title": "Pourquoi passer par Aman & Partners",
+    "description": "Un partenaire unique, qui comprend à la fois vos enjeux et la technique.",
+    "highlight": "Notre différence",
+    "items": {
+      "founder": {
+        "title": "Un fondateur développeur",
+        "text": "Le fondateur est lui-même développeur full-stack\u00a0: nous comprenons la technique, qualifions votre besoin, estimons le projet et contrôlons la qualité du travail livré."
+      },
+      "single": {
+        "title": "Un seul interlocuteur",
+        "text": "Vous échangez avec une seule équipe, qui centralise les décisions, les questions et le suivi, quel que soit le nombre d'experts impliqués."
+      },
+      "experts": {
+        "title": "Des experts adaptés au projet",
+        "text": "Chaque projet est confié aux compétences dont il a réellement besoin, plutôt qu'à une équipe unique censée tout faire."
+      },
+      "business": {
+        "title": "Une vision business",
+        "text": "Nous partons de vos objectifs, pas de la technologie\u00a0: la solution doit servir votre activité."
+      },
+      "followup": {
+        "title": "Un suivi de projet",
+        "text": "Nous vous tenons informé de l'avancement à chaque étape, pour que vous n'ayez pas à coordonner vous-même."
+      },
+      "scalable": {
+        "title": "Une solution évolutive",
+        "text": "Nous concevons des solutions capables de grandir avec votre entreprise, et nous pouvons les faire évoluer."
+      }
+    }
+  },
   "FileUpload": {
     "choose": "Choisir un fichier",
     "change": "Changer de fichier",

@@ -69,6 +69,67 @@
       "text": "Tell us about your project: we'll tell you how to make it happen."
     }
   },
+  "Method": {
+    "eyebrow": "Our process",
+    "title": "How it works",
+    "description": "A clear five-step process, from our first conversation to the delivery of your project.",
+    "learnMore": "Discover our process in detail",
+    "stepLabel": "Step {number}",
+    "steps": {
+      "brief": {
+        "title": "You tell us what you need",
+        "text": "Through the project request form or during a call, you present your idea, your context and your constraints."
+      },
+      "analysis": {
+        "title": "We analyse your project",
+        "text": "We clarify the features, constraints and goals, then propose a suitable solution."
+      },
+      "build": {
+        "title": "We build it or select the right experts",
+        "text": "Depending on the project, we build it ourselves or entrust it to the freelancers and agencies in our network whose skills match."
+      },
+      "manage": {
+        "title": "We manage the project",
+        "text": "Communication, follow-up and coordination: you keep one point of contact from start to finish."
+      },
+      "deliver": {
+        "title": "You receive your solution",
+        "text": "We deliver your project, with optional maintenance to keep it running and evolving."
+      }
+    }
+  },
+  "Advantages": {
+    "eyebrow": "Why us",
+    "title": "Why work with Aman & Partners",
+    "description": "A single partner who understands both your business and the technology.",
+    "highlight": "What sets us apart",
+    "items": {
+      "founder": {
+        "title": "A developer founder",
+        "text": "The founder is a full-stack developer himself: we understand the technology, qualify your needs, estimate the project and check the quality of the work delivered."
+      },
+      "single": {
+        "title": "One point of contact",
+        "text": "You deal with a single team that centralises decisions, questions and follow-up, however many experts are involved."
+      },
+      "experts": {
+        "title": "Experts matched to your project",
+        "text": "Each project goes to the skills it actually needs, rather than to a single team expected to do everything."
+      },
+      "business": {
+        "title": "A business mindset",
+        "text": "We start from your goals, not from the technology: the solution has to serve your business."
+      },
+      "followup": {
+        "title": "Project follow-up",
+        "text": "We keep you informed of progress at every stage, so you don't have to coordinate anything yourself."
+      },
+      "scalable": {
+        "title": "A scalable solution",
+        "text": "We design solutions that can grow with your business, and we can keep improving them."
+      }
+    }
+  },
   "FileUpload": {
     "choose": "Choose a file",
     "change": "Change file",

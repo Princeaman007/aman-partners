@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Globe,
   LayoutDashboard,
   Smartphone,
@@ -9,10 +8,10 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { PRIMARY_CTA_HREF } from "@/components/layout/navigation";
+import { ArrowLink } from "@/components/ui/ArrowLink";
 import { Card, CardDescription, CardTitle } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Link } from "@/i18n/navigation";
 
 const TITLE_ID = "services-title";
 
@@ -28,9 +27,6 @@ const SERVICES = [
   { key: "maintenance", icon: Wrench },
 ] as const satisfies ReadonlyArray<{ key: string; icon: LucideIcon }>;
 
-const ARROW_LINK_CLASSES =
-  "group inline-flex items-center gap-2 rounded-sm text-sm font-semibold text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground";
-
 export async function Services() {
   const t = await getTranslations("Services");
   const tNav = await getTranslations("Navigation");
@@ -45,14 +41,7 @@ export async function Services() {
             title={t("title")}
             description={t("description")}
           />
-          <Link href="/services" className={ARROW_LINK_CLASSES}>
-            {t("viewAll")}
-            <ArrowRight
-              aria-hidden="true"
-              strokeWidth={1.5}
-              className="size-4 transition-transform duration-150 group-hover:translate-x-0.5"
-            />
-          </Link>
+          <ArrowLink href="/services">{t("viewAll")}</ArrowLink>
         </div>
 
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3">
@@ -73,14 +62,7 @@ export async function Services() {
               <h3 className="text-lg font-semibold tracking-tight">{t("other.title")}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{t("other.text")}</p>
               <p className="mt-6 pt-2 lg:mt-auto">
-                <Link href={PRIMARY_CTA_HREF} className={ARROW_LINK_CLASSES}>
-                  {tNav("cta")}
-                  <ArrowRight
-                    aria-hidden="true"
-                    strokeWidth={1.5}
-                    className="size-4 transition-transform duration-150 group-hover:translate-x-0.5"
-                  />
-                </Link>
+                <ArrowLink href={PRIMARY_CTA_HREF}>{tNav("cta")}</ArrowLink>
               </p>
             </div>
           </li>
