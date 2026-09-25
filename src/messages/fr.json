@@ -3,10 +3,16 @@
     "title": "Aman & Partners",
     "description": "Nous trouvons, sélectionnons et coordonnons les experts digitaux dont votre entreprise a besoin pour transformer une idée en solution concrète."
   },
-  "HomePage": {
-    "title": "Aman & Partners",
-    "tagline": "Votre projet digital. Les bons experts. Un seul interlocuteur.",
-    "switchLocale": "English version"
+  "Hero": {
+    "eyebrow": "Web, mobile, logiciels et automatisation",
+    "title": "Votre projet digital. Les bons experts. <accent>Un seul interlocuteur.</accent>",
+    "subtitle": "Nous trouvons, sélectionnons et coordonnons les experts digitaux dont votre entreprise a besoin pour transformer une idée en solution concrète.",
+    "secondaryCta": "Découvrir notre méthode",
+    "visualLabel": "Schéma du parcours\u00a0: votre besoin est confié à Aman & Partners, qui le transmet aux experts adaptés, puis vous livre le projet.",
+    "stepClient": "Client",
+    "stepHub": "Aman & Partners",
+    "stepExperts": "Experts",
+    "stepDelivered": "Projet livré"
   },
   "FileUpload": {
     "choose": "Choisir un fichier",

@@ -1,0 +1,18 @@
+/* Points qui glissent le long des lignes du schéma. */
+.flow {
+  stroke-dasharray: 0 14;
+  animation: flow 1.6s linear infinite;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+/* Sans animation, les points restent visibles et le schéma reste complet. */
+@media (prefers-reduced-motion: reduce) {
+  .flow {
+    animation: none;
+  }
+}
