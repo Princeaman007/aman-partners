@@ -31,7 +31,10 @@
     "method": "Notre méthode",
     "work": "Réalisations",
     "about": "À propos",
-    "cta": "Parler de mon projet"
+    "cta": "Parler de mon projet",
+    "menu": "Menu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "Styleguide": {
     "title": "Composants",

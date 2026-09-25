@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
 import { HeaderShell } from "./HeaderShell";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { MobileMenu } from "./MobileMenu";
 import { NavLinks } from "./NavLinks";
 import { PRIMARY_CTA_HREF } from "./navigation";
 import { ThemeToggle } from "./ThemeToggle";
@@ -14,7 +15,7 @@ export async function Header() {
 
   return (
     <HeaderShell>
-      <Container className="flex h-16 items-center justify-between gap-6">
+      <Container size="full" className="flex h-16 items-center justify-between gap-6">
         <Link
           href="/"
           aria-label={t("home")}
@@ -28,11 +29,12 @@ export async function Header() {
         </nav>
 
         <div className="flex items-center gap-1">
-          <LanguageSwitcher />
-          <ThemeToggle />
+          <LanguageSwitcher className="hidden sm:block" />
+          <ThemeToggle className="hidden sm:inline-flex" />
           <ButtonLink href={PRIMARY_CTA_HREF} size="sm" className="ml-3 hidden lg:inline-flex">
             {t("cta")}
           </ButtonLink>
+          <MobileMenu className="lg:hidden" />
         </div>
       </Container>
     </HeaderShell>

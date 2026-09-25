@@ -47,10 +47,8 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       className={`${manrope.variable} ${instrumentSerif.variable}`}
       suppressHydrationWarning
     >
-      <head>
-        <ThemeScript />
-      </head>
       <body>
+        <ThemeScript />
         <NextIntlClientProvider>
           <SkipLink />
           <Header />

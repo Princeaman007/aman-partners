@@ -31,7 +31,10 @@
     "method": "Our process",
     "work": "Work",
     "about": "About",
-    "cta": "Tell us about your project"
+    "cta": "Tell us about your project",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "Styleguide": {
     "title": "Components",
