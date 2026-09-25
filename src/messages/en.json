@@ -14,6 +14,61 @@
     "stepExperts": "Experts",
     "stepDelivered": "Delivered project"
   },
+  "Problems": {
+    "eyebrow": "The challenge",
+    "title": "A digital project shouldn't turn into a headache.",
+    "description": "You have a digital project but don't know who to contact, how much it should cost or how to manage the development? We handle expert selection, coordination and project follow-up.",
+    "items": {
+      "contact": {
+        "title": "You don't know who to contact",
+        "text": "Agencies, freelancers, platforms: there are many options, and they are hard to assess when it isn't your field."
+      },
+      "quotes": {
+        "title": "Quotes are hard to compare",
+        "text": "Price, scope, technologies: two proposals for the same project can have almost nothing in common."
+      },
+      "time": {
+        "title": "You don't have time to manage a project",
+        "text": "Following a development project takes time and technical skills your team may not have."
+      },
+      "provider": {
+        "title": "You're afraid of choosing the wrong provider",
+        "text": "A wrong choice is costly: delays, budget overruns or a solution that doesn't meet your needs."
+      }
+    }
+  },
+  "Services": {
+    "eyebrow": "Our services",
+    "title": "Solutions for every stage of your digital project.",
+    "description": "Whether you start from an idea or an existing tool, we build the project or select the right experts, and we manage it through to delivery.",
+    "viewAll": "View all services",
+    "items": {
+      "web": {
+        "title": "Web development",
+        "text": "Company websites, e-commerce, web applications, business portals."
+      },
+      "mobile": {
+        "title": "Mobile apps",
+        "text": "Android, iOS, React Native, business apps."
+      },
+      "software": {
+        "title": "Software & SaaS",
+        "text": "Business software, SaaS, ERP, CRM, dashboards."
+      },
+      "automation": {
+        "title": "Automation",
+        "text": "Processes, APIs, integrations, AI, workflows."
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "text": "Fixes, improvements, security, technical support."
+      }
+    },
+    "other": {
+      "title": "A different need?",
+      "text": "Tell us about your project: we'll tell you how to make it happen."
+    }
+  },
   "FileUpload": {
     "choose": "Choose a file",
     "change": "Change file",

@@ -14,6 +14,61 @@
     "stepExperts": "Experts",
     "stepDelivered": "Projet livré"
   },
+  "Problems": {
+    "eyebrow": "Le constat",
+    "title": "Un projet digital ne devrait pas devenir un casse-tête.",
+    "description": "Vous avez un projet digital mais vous ne savez pas qui contacter, combien cela doit coûter ou comment gérer le développement\u00a0? Nous nous occupons de la sélection des experts, de la coordination et du suivi du projet.",
+    "items": {
+      "contact": {
+        "title": "Vous ne savez pas qui contacter",
+        "text": "Agences, freelances, plateformes\u00a0: l'offre est vaste, et difficile à évaluer quand on n'est pas du métier."
+      },
+      "quotes": {
+        "title": "Les devis sont difficiles à comparer",
+        "text": "Prix, périmètre, technologies\u00a0: deux propositions pour un même projet peuvent n'avoir presque rien en commun."
+      },
+      "time": {
+        "title": "Vous n'avez pas le temps de gérer un projet",
+        "text": "Suivre un développement demande du temps et des compétences techniques que votre équipe n'a pas forcément."
+      },
+      "provider": {
+        "title": "Vous avez peur de choisir le mauvais prestataire",
+        "text": "Un mauvais choix coûte cher\u00a0: retards, budget dépassé ou solution qui ne répond pas au besoin."
+      }
+    }
+  },
+  "Services": {
+    "eyebrow": "Nos services",
+    "title": "Des solutions pour chaque étape de votre projet digital.",
+    "description": "Que vous partiez d'une idée ou d'un outil existant, nous réalisons le projet ou sélectionnons les experts adaptés, et nous le pilotons jusqu'à la livraison.",
+    "viewAll": "Voir tous les services",
+    "items": {
+      "web": {
+        "title": "Développement web",
+        "text": "Sites vitrines, e-commerce, applications web, portails professionnels."
+      },
+      "mobile": {
+        "title": "Applications mobiles",
+        "text": "Android, iOS, React Native, applications métier."
+      },
+      "software": {
+        "title": "Logiciels & SaaS",
+        "text": "Logiciels métiers, SaaS, ERP, CRM, dashboards."
+      },
+      "automation": {
+        "title": "Automatisation",
+        "text": "Processus, API, intégrations, IA, workflows."
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "text": "Corrections, évolutions, sécurité, support technique."
+      }
+    },
+    "other": {
+      "title": "Un autre besoin\u00a0?",
+      "text": "Décrivez-nous votre projet\u00a0: nous vous dirons comment le réaliser."
+    }
+  },
   "FileUpload": {
     "choose": "Choisir un fichier",
     "change": "Changer de fichier",
