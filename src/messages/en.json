@@ -8,6 +8,13 @@
     "tagline": "Your digital project. The right experts. One point of contact.",
     "switchLocale": "Version française"
   },
+  "FileUpload": {
+    "choose": "Choose a file",
+    "change": "Change file",
+    "orDrop": "or drag it here",
+    "selected": "Selected file:",
+    "remove": "Remove file"
+  },
   "Styleguide": {
     "title": "Components",
     "description": "Internal component test page, available in development only.",
@@ -40,6 +47,26 @@
     "headingTitle": "A digital project shouldn't turn into a headache.",
     "headingText": "You have a digital project but don't know who to contact, how much it should cost or how to manage the development? We handle expert selection, coordination and project follow-up.",
     "headingCenterEyebrow": "Get started",
-    "headingCenterTitle": "Have an idea? Let's turn it into a project."
+    "headingCenterTitle": "Have an idea? Let's turn it into a project.",
+    "forms": "Form fields",
+    "fieldName": "Name",
+    "fieldEmail": "Email",
+    "fieldEmailHint": "Example: name@company.com",
+    "fieldEmailError": "Please enter a valid email address.",
+    "fieldDisabled": "Disabled field",
+    "fieldDescription": "Project description",
+    "fieldDescriptionHint": "Describe your needs, your goals and your constraints.",
+    "fieldBudget": "Estimated budget",
+    "fieldBudgetPlaceholder": "Select a range",
+    "budgetUnder1k": "Under €1,000",
+    "budget1kTo3k": "€1,000 – €3,000",
+    "budget3kTo5k": "€3,000 – €5,000",
+    "budget5kTo10k": "€5,000 – €10,000",
+    "budgetOver10k": "Over €10,000",
+    "budgetUnknown": "Not sure yet",
+    "consentLabel": "I agree that my data will be used to process my request, in accordance with the <link>privacy policy</link>.",
+    "consentError": "Please accept to send your request.",
+    "fieldAttachment": "Attachment",
+    "fieldAttachmentHint": "PDF, DOCX, PNG or JPG, 10 MB maximum."
   }
 }

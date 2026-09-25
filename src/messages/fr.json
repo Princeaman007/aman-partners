@@ -8,6 +8,13 @@
     "tagline": "Votre projet digital. Les bons experts. Un seul interlocuteur.",
     "switchLocale": "English version"
   },
+  "FileUpload": {
+    "choose": "Choisir un fichier",
+    "change": "Changer de fichier",
+    "orDrop": "ou le glisser ici",
+    "selected": "Fichier sélectionné\u00a0:",
+    "remove": "Retirer le fichier"
+  },
   "Styleguide": {
     "title": "Composants",
     "description": "Page interne de test des composants, disponible uniquement en développement.",
@@ -40,6 +47,26 @@
     "headingTitle": "Un projet digital ne devrait pas devenir un casse-tête.",
     "headingText": "Vous avez un projet digital mais vous ne savez pas qui contacter, combien cela doit coûter ou comment gérer le développement\u00a0? Nous nous occupons de la sélection des experts, de la coordination et du suivi du projet.",
     "headingCenterEyebrow": "Démarrer",
-    "headingCenterTitle": "Vous avez une idée\u00a0? Transformons-la en projet."
+    "headingCenterTitle": "Vous avez une idée\u00a0? Transformons-la en projet.",
+    "forms": "Champs de formulaire",
+    "fieldName": "Nom",
+    "fieldEmail": "E-mail",
+    "fieldEmailHint": "Exemple\u00a0: nom@entreprise.be",
+    "fieldEmailError": "Veuillez saisir une adresse e-mail valide.",
+    "fieldDisabled": "Champ désactivé",
+    "fieldDescription": "Description du projet",
+    "fieldDescriptionHint": "Décrivez votre besoin, vos objectifs et vos contraintes.",
+    "fieldBudget": "Budget estimé",
+    "fieldBudgetPlaceholder": "Sélectionnez une fourchette",
+    "budgetUnder1k": "Moins de 1\u00a0000\u00a0€",
+    "budget1kTo3k": "1\u00a0000 – 3\u00a0000\u00a0€",
+    "budget3kTo5k": "3\u00a0000 – 5\u00a0000\u00a0€",
+    "budget5kTo10k": "5\u00a0000 – 10\u00a0000\u00a0€",
+    "budgetOver10k": "Plus de 10\u00a0000\u00a0€",
+    "budgetUnknown": "Je ne sais pas encore",
+    "consentLabel": "J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la <link>politique de confidentialité</link>.",
+    "consentError": "Veuillez accepter pour envoyer votre demande.",
+    "fieldAttachment": "Pièce jointe",
+    "fieldAttachmentHint": "PDF, DOCX, PNG ou JPG, 10\u00a0Mo maximum."
   }
 }
