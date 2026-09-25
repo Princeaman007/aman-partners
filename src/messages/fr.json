@@ -45,29 +45,72 @@
     "items": {
       "web": {
         "title": "Développement web",
-        "text": "Sites vitrines, e-commerce, applications web, portails professionnels."
+        "text": "Sites vitrines, e-commerce, applications web, portails professionnels.",
+        "description": "Du site vitrine à la plateforme métier, nous concevons des sites et des applications web rapides, accessibles et faciles à faire évoluer.",
+        "offerings": {
+          "showcase": "Sites vitrines",
+          "ecommerce": "E-commerce",
+          "webApps": "Applications web",
+          "portals": "Portails professionnels"
+        }
       },
       "mobile": {
         "title": "Applications mobiles",
-        "text": "Android, iOS, React Native, applications métier."
+        "text": "Android, iOS, React Native, applications métier.",
+        "description": "Des applications pour vos clients ou pour vos équipes, sur Android et iOS, pensées pour être simples à utiliser au quotidien.",
+        "offerings": {
+          "android": "Android",
+          "ios": "iOS",
+          "reactNative": "React Native",
+          "business": "Applications métier"
+        }
       },
       "software": {
         "title": "Logiciels & SaaS",
-        "text": "Logiciels métiers, SaaS, ERP, CRM, dashboards."
+        "text": "Logiciels métiers, SaaS, ERP, CRM, dashboards.",
+        "description": "Des outils sur mesure pour gérer votre activité, ou une plateforme SaaS pour proposer votre service à vos propres clients.",
+        "offerings": {
+          "business": "Logiciels métiers",
+          "saas": "SaaS",
+          "erp": "ERP",
+          "crm": "CRM",
+          "dashboards": "Dashboards"
+        }
       },
       "automation": {
         "title": "Automatisation",
-        "text": "Processus, API, intégrations, IA, workflows."
+        "text": "Processus, API, intégrations, IA, workflows.",
+        "description": "Nous automatisons les tâches répétitives et connectons vos outils entre eux, pour que vos équipes se concentrent sur leur métier.",
+        "offerings": {
+          "processes": "Processus",
+          "api": "API",
+          "integrations": "Intégrations",
+          "ai": "IA",
+          "workflows": "Workflows"
+        }
       },
       "maintenance": {
         "title": "Maintenance",
-        "text": "Corrections, évolutions, sécurité, support technique."
+        "text": "Corrections, évolutions, sécurité, support technique.",
+        "description": "Après la mise en ligne, nous gardons votre solution fiable, sécurisée et à jour, et nous la faisons évoluer avec vos besoins.",
+        "offerings": {
+          "fixes": "Corrections",
+          "improvements": "Évolutions",
+          "security": "Sécurité",
+          "support": "Support technique"
+        }
       }
     },
     "other": {
       "title": "Un autre besoin\u00a0?",
       "text": "Décrivez-nous votre projet\u00a0: nous vous dirons comment le réaliser."
     }
+  },
+  "ServicesPage": {
+    "eyebrow": "Services",
+    "title": "Toutes les compétences digitales, un seul interlocuteur.",
+    "description": "Du site vitrine au logiciel métier, nous réalisons votre projet ou sélectionnons les experts adaptés, puis nous le pilotons jusqu'à la livraison.",
+    "offeringsLabel": "Ce que nous couvrons"
   },
   "Method": {
     "eyebrow": "Notre méthode",

@@ -45,29 +45,72 @@
     "items": {
       "web": {
         "title": "Web development",
-        "text": "Company websites, e-commerce, web applications, business portals."
+        "text": "Company websites, e-commerce, web applications, business portals.",
+        "description": "From company websites to business platforms, we design fast, accessible websites and web applications that are easy to evolve.",
+        "offerings": {
+          "showcase": "Company websites",
+          "ecommerce": "E-commerce",
+          "webApps": "Web applications",
+          "portals": "Business portals"
+        }
       },
       "mobile": {
         "title": "Mobile apps",
-        "text": "Android, iOS, React Native, business apps."
+        "text": "Android, iOS, React Native, business apps.",
+        "description": "Apps for your customers or your teams, on Android and iOS, designed to be simple to use every day.",
+        "offerings": {
+          "android": "Android",
+          "ios": "iOS",
+          "reactNative": "React Native",
+          "business": "Business apps"
+        }
       },
       "software": {
         "title": "Software & SaaS",
-        "text": "Business software, SaaS, ERP, CRM, dashboards."
+        "text": "Business software, SaaS, ERP, CRM, dashboards.",
+        "description": "Custom tools to run your business, or a SaaS platform to offer your service to your own customers.",
+        "offerings": {
+          "business": "Business software",
+          "saas": "SaaS",
+          "erp": "ERP",
+          "crm": "CRM",
+          "dashboards": "Dashboards"
+        }
       },
       "automation": {
         "title": "Automation",
-        "text": "Processes, APIs, integrations, AI, workflows."
+        "text": "Processes, APIs, integrations, AI, workflows.",
+        "description": "We automate repetitive tasks and connect your tools, so your teams can focus on their core work.",
+        "offerings": {
+          "processes": "Processes",
+          "api": "APIs",
+          "integrations": "Integrations",
+          "ai": "AI",
+          "workflows": "Workflows"
+        }
       },
       "maintenance": {
         "title": "Maintenance",
-        "text": "Fixes, improvements, security, technical support."
+        "text": "Fixes, improvements, security, technical support.",
+        "description": "After launch, we keep your solution reliable, secure and up to date, and we evolve it as your needs change.",
+        "offerings": {
+          "fixes": "Fixes",
+          "improvements": "Improvements",
+          "security": "Security",
+          "support": "Technical support"
+        }
       }
     },
     "other": {
       "title": "A different need?",
       "text": "Tell us about your project: we'll tell you how to make it happen."
     }
+  },
+  "ServicesPage": {
+    "eyebrow": "Services",
+    "title": "Every digital skill, one point of contact.",
+    "description": "From company websites to business software, we build your project or select the right experts, then manage it through to delivery.",
+    "offeringsLabel": "What we cover"
   },
   "Method": {
     "eyebrow": "Our process",
