@@ -36,6 +36,25 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "Footer": {
+    "navLabel": "Site map",
+    "tagline": "Your needs. Our network. A delivered project.",
+    "company": "Company",
+    "partners": "Partners",
+    "partnersText": "Are you a developer, freelancer or agency?",
+    "joinNetwork": "Join our network",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Belgium",
+    "contactPage": "Contact form",
+    "legal": "Legal",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "copyright": "© {year} Aman & Partners. All rights reserved.",
+    "companyNumber": "Company number: {number}"
+  },
   "Styleguide": {
     "title": "Components",
     "description": "Internal component test page, available in development only.",

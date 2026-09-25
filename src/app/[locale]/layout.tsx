@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/SkipLink";
 import { ThemeScript } from "@/components/layout/ThemeScript";
@@ -47,14 +48,17 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       className={`${manrope.variable} ${instrumentSerif.variable}`}
       suppressHydrationWarning
     >
-      <body>
+      <head>
         <ThemeScript />
+      </head>
+      <body className="flex min-h-dvh flex-col">
         <NextIntlClientProvider>
           <SkipLink />
           <Header />
-          <main id={MAIN_CONTENT_ID} tabIndex={-1} className="outline-none">
+          <main id={MAIN_CONTENT_ID} tabIndex={-1} className="flex-1 outline-none">
             {children}
           </main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
