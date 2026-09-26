@@ -239,6 +239,40 @@
     "resultLabel": "Result",
     "toComplete": "[À COMPLÉTER]"
   },
+  "AboutPage": {
+    "eyebrow": "About",
+    "title": "A partner who speaks both business and technology.",
+    "description": "Our mission: to give businesses easy access to the digital skills they need, without spending weeks searching for and comparing providers.",
+    "positioning": {
+      "eyebrow": "Our positioning",
+      "title": "Three skills, brought together for your project.",
+      "description": "A successful digital project requires understanding your business, mastering the technology and bringing in the right people. We bring all three together.",
+      "items": {
+        "business": {
+          "title": "Business",
+          "text": "We start from your goals and constraints to define a solution that truly serves your business."
+        },
+        "technology": {
+          "title": "Technology",
+          "text": "The founder is a developer: we qualify your needs, estimate the project and check the quality of what is delivered."
+        },
+        "network": {
+          "title": "Network of experts",
+          "text": "We build the project ourselves or entrust it to the freelancers and agencies in our network, selected for their skills."
+        }
+      }
+    },
+    "founder": {
+      "eyebrow": "The founder",
+      "role": "Founder, full-stack developer",
+      "bio1": "A full-stack developer based in Belgium, Prince Aman designs and builds web applications end to end, from the interface to the server. He has designed and delivered platforms that are live today.",
+      "bio2": "He founded Aman & Partners on one belief: a digital project succeeds when someone understands both the business need and the technology required to meet it.",
+      "bio3": "He follows every project from analysis to delivery: he qualifies the need, builds part of the development himself, selects experts from the network when needed and checks the quality of the work delivered.",
+      "photoAlt": "Portrait of Prince Aman, founder of Aman & Partners",
+      "linkedin": "View LinkedIn profile",
+      "newTab": "(opens in a new tab)"
+    }
+  },
   "FAQ": {
     "eyebrow": "FAQ",
     "title": "Your questions, answered",

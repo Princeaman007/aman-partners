@@ -239,6 +239,40 @@
     "resultLabel": "Résultat",
     "toComplete": "[À COMPLÉTER]"
   },
+  "AboutPage": {
+    "eyebrow": "À propos",
+    "title": "Un partenaire qui parle business et technique.",
+    "description": "Notre mission\u00a0: permettre aux entreprises d'accéder facilement aux compétences digitales dont elles ont besoin, sans passer des semaines à chercher et à comparer des prestataires.",
+    "positioning": {
+      "eyebrow": "Notre positionnement",
+      "title": "Trois compétences, réunies pour votre projet.",
+      "description": "Un projet digital réussi demande de comprendre votre activité, de maîtriser la technique et de mobiliser les bonnes personnes. Nous réunissons les trois.",
+      "items": {
+        "business": {
+          "title": "Business",
+          "text": "Nous partons de vos objectifs et de vos contraintes pour définir une solution qui sert réellement votre activité."
+        },
+        "technology": {
+          "title": "Technologie",
+          "text": "Le fondateur est développeur\u00a0: nous qualifions le besoin, estimons le projet et contrôlons la qualité de ce qui est livré."
+        },
+        "network": {
+          "title": "Réseau d'experts",
+          "text": "Nous réalisons le projet ou le confions aux freelances et agences de notre réseau, sélectionnés pour leurs compétences."
+        }
+      }
+    },
+    "founder": {
+      "eyebrow": "Le fondateur",
+      "role": "Fondateur, développeur full-stack",
+      "bio1": "Développeur full-stack basé en Belgique, Prince Aman conçoit et développe des applications web de bout en bout, de l'interface au serveur. Il a conçu et livré des plateformes aujourd'hui en production.",
+      "bio2": "Il a fondé Aman & Partners avec une conviction\u00a0: un projet digital réussit quand quelqu'un comprend à la fois le besoin de l'entreprise et la technique nécessaire pour y répondre.",
+      "bio3": "Il accompagne chaque projet de l'analyse à la livraison\u00a0: il qualifie le besoin, réalise lui-même une partie des développements, sélectionne les experts du réseau lorsque c'est nécessaire et contrôle la qualité du travail livré.",
+      "photoAlt": "Portrait de Prince Aman, fondateur d'Aman & Partners",
+      "linkedin": "Voir le profil LinkedIn",
+      "newTab": "(s'ouvre dans un nouvel onglet)"
+    }
+  },
   "FAQ": {
     "eyebrow": "Questions fréquentes",
     "title": "Vos questions, nos réponses",
