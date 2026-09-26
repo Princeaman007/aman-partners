@@ -305,6 +305,21 @@
     "description": "Tell us what you need: we analyse it and get back to you with a suitable proposal.",
     "button": "Start my project"
   },
+  "Forms": {
+    "errors": {
+      "required": "This field is required.",
+      "tooLong": "This text is too long.",
+      "invalidEmail": "Please enter a valid email address, for example name@company.com.",
+      "invalidPhone": "Please enter a valid phone number, for example +32 470 12 34 56.",
+      "invalidUrl": "Please enter a full web address, starting with https://.",
+      "invalidOption": "Please choose an option from the list.",
+      "selectAtLeastOne": "Please select at least one option.",
+      "consentRequired": "Your consent is required to send this form.",
+      "invalidNumber": "Please enter a whole number, for example 5.",
+      "fileTooLarge": "This file exceeds the maximum size of 10 MB.",
+      "invalidFileType": "This format is not accepted. Accepted formats: PDF, DOCX, PNG or JPG."
+    }
+  },
   "FileUpload": {
     "choose": "Choose a file",
     "change": "Change file",

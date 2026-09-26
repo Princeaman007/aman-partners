@@ -305,6 +305,21 @@
     "description": "Décrivez-nous votre besoin\u00a0: nous l'analysons et revenons vers vous avec une proposition adaptée.",
     "button": "Démarrer mon projet"
   },
+  "Forms": {
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "tooLong": "Ce texte est trop long.",
+      "invalidEmail": "Veuillez saisir une adresse e-mail valide, par exemple nom@entreprise.be.",
+      "invalidPhone": "Veuillez saisir un numéro de téléphone valide, par exemple +32 470 12 34 56.",
+      "invalidUrl": "Veuillez saisir une adresse web complète, commençant par https://.",
+      "invalidOption": "Veuillez choisir une option dans la liste.",
+      "selectAtLeastOne": "Veuillez sélectionner au moins une option.",
+      "consentRequired": "Votre accord est nécessaire pour envoyer ce formulaire.",
+      "invalidNumber": "Veuillez saisir un nombre entier, par exemple 5.",
+      "fileTooLarge": "Ce fichier dépasse la taille maximale de 10\u00a0Mo.",
+      "invalidFileType": "Ce format n'est pas accepté. Formats acceptés\u00a0: PDF, DOCX, PNG ou JPG."
+    }
+  },
   "FileUpload": {
     "choose": "Choisir un fichier",
     "change": "Changer de fichier",
