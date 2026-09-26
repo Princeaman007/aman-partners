@@ -11,7 +11,9 @@ export type Project = {
   name: string;
   /** Vrai projet réalisé par le fondateur. Seuls les projets à true peuvent être affichés. */
   isReal: boolean;
-  /** Mis en avant sur la page d'accueil. */
+  /** Affiché sur le site. Un projet non publié reste en réserve, en attendant ses informations. */
+  isPublished: boolean;
+  /** Mis en avant sur la page d'accueil (doit aussi être publié). */
   isFeatured: boolean;
   /** En production et accessible au public. */
   isLive: boolean;
@@ -33,6 +35,7 @@ export const PROJECTS = [
     key: "shopeasy",
     name: "ShopEasy CI",
     isReal: true,
+    isPublished: true,
     isFeatured: true,
     isLive: true,
     url: "https://shopeasyci.store",
@@ -45,6 +48,7 @@ export const PROJECTS = [
     key: "swiftride",
     name: "SwiftRide",
     isReal: true,
+    isPublished: false,
     isFeatured: false,
     isLive: false,
     url: null,
@@ -57,6 +61,7 @@ export const PROJECTS = [
     key: "edvance",
     name: "Edvance",
     isReal: true,
+    isPublished: false,
     isFeatured: false,
     isLive: false,
     url: null,
@@ -79,6 +84,7 @@ export const PROJECTS = [
     key: "talentproof",
     name: "TalentProof",
     isReal: true,
+    isPublished: false,
     isFeatured: false,
     isLive: false,
     url: null,
@@ -91,6 +97,7 @@ export const PROJECTS = [
     key: "epb",
     name: "EPB",
     isReal: true,
+    isPublished: false,
     isFeatured: false,
     isLive: false,
     url: null,
@@ -105,10 +112,18 @@ type ProjectEntry = (typeof PROJECTS)[number];
 
 export type ProjectKey = ProjectEntry["key"];
 
-/** Un projet affichable sur l'accueil : réel et mis en avant. */
-export type FeaturedProject = Extract<ProjectEntry, { isReal: true; isFeatured: true }>;
+/** Un projet affichable sur la page Réalisations : réel et publié. */
+export type PublishedProject = Extract<ProjectEntry, { isReal: true; isPublished: true }>;
+
+/** Un projet affichable sur l'accueil : réel, publié et mis en avant. */
+export type FeaturedProject = Extract<PublishedProject, { isFeatured: true }>;
+
+/** Les projets de la page Réalisations. */
+export const PUBLISHED_PROJECTS = PROJECTS.filter(
+  (project): project is PublishedProject => project.isReal && project.isPublished,
+);
 
 /** Les projets mis en avant sur la page d'accueil. */
-export const FEATURED_PROJECTS = PROJECTS.filter(
-  (project): project is FeaturedProject => project.isReal && project.isFeatured,
+export const FEATURED_PROJECTS = PUBLISHED_PROJECTS.filter(
+  (project): project is FeaturedProject => project.isFeatured,
 );

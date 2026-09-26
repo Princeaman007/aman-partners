@@ -218,6 +218,8 @@
         "category": "SaaS e-commerce",
         "text": "Plateforme SaaS e-commerce multitenant qui permet aux commerçants ivoiriens d'ouvrir et de gérer leur boutique en ligne.",
         "imageAlt": "Capture d'écran de la plateforme ShopEasy CI",
+        "context": "[À COMPLÉTER PAR PRINCE]",
+        "result": "La plateforme est en production et accessible au public sur shopeasyci.store.",
         "features": {
           "subscriptions": "Formules d'abonnement",
           "themes": "Boutiques multi-thèmes",
@@ -226,6 +228,16 @@
         }
       }
     }
+  },
+  "WorkPage": {
+    "eyebrow": "Réalisations",
+    "title": "Ce que nous avons construit.",
+    "description": "Des plateformes conçues et développées par le fondateur d'Aman & Partners, présentées telles qu'elles sont, sans rien enjoliver.",
+    "contextLabel": "Contexte",
+    "featuresLabel": "Fonctionnalités",
+    "technologiesLabel": "Technologies",
+    "resultLabel": "Résultat",
+    "toComplete": "[À COMPLÉTER]"
   },
   "FAQ": {
     "eyebrow": "Questions fréquentes",

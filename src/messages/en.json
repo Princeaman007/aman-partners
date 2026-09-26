@@ -218,6 +218,8 @@
         "category": "E-commerce SaaS",
         "text": "Multi-tenant e-commerce SaaS platform that lets merchants in Côte d'Ivoire open and manage their online store.",
         "imageAlt": "Screenshot of the ShopEasy CI platform",
+        "context": "[À COMPLÉTER PAR PRINCE]",
+        "result": "The platform is live and publicly available at shopeasyci.store.",
         "features": {
           "subscriptions": "Subscription plans",
           "themes": "Multi-theme storefronts",
@@ -226,6 +228,16 @@
         }
       }
     }
+  },
+  "WorkPage": {
+    "eyebrow": "Work",
+    "title": "What we have built.",
+    "description": "Platforms designed and built by the founder of Aman & Partners, presented as they are, with nothing embellished.",
+    "contextLabel": "Context",
+    "featuresLabel": "Features",
+    "technologiesLabel": "Technologies",
+    "resultLabel": "Result",
+    "toComplete": "[À COMPLÉTER]"
   },
   "FAQ": {
     "eyebrow": "FAQ",
