@@ -273,6 +273,36 @@
       "newTab": "(s'ouvre dans un nouvel onglet)"
     }
   },
+  "ContactPage": {
+    "eyebrow": "Contact",
+    "title": "Parlons de votre besoin.",
+    "description": "Une question, une idée, un projet à lancer\u00a0? Écrivez-nous\u00a0: nous revenons vers vous rapidement.",
+    "detailsTitle": "Nos coordonnées",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Localisation",
+    "location": "Belgique",
+    "bookingTitle": "Vous préférez en parler de vive voix\u00a0?",
+    "bookingText": "Réservez un appel à l'heure qui vous convient.",
+    "bookingCta": "Réserver un appel",
+    "projectTitle": "Vous avez déjà un projet précis\u00a0?",
+    "projectText": "Le formulaire de demande de projet nous permet de préparer une réponse plus complète.",
+    "projectCta": "Démarrer mon projet",
+    "formTitle": "Envoyez-nous un message",
+    "newTab": "(s'ouvre dans un nouvel onglet)"
+  },
+  "ContactForm": {
+    "name": "Nom",
+    "company": "Entreprise",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Votre message",
+    "messageHint": "Décrivez votre besoin ou posez votre question.",
+    "submit": "Envoyer mon message",
+    "successTitle": "Merci pour votre message.",
+    "successText": "Nous revenons vers vous rapidement. Un e-mail de confirmation vient de vous être envoyé.",
+    "sendAnother": "Envoyer un autre message"
+  },
   "FAQ": {
     "eyebrow": "Questions fréquentes",
     "title": "Vos questions, nos réponses",
@@ -306,6 +336,15 @@
     "button": "Démarrer mon projet"
   },
   "Forms": {
+    "requiredNote": "Les champs marqués d'un astérisque (*) sont obligatoires.",
+    "consentLabel": "J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la <link>politique de confidentialité</link>.",
+    "honeypotLabel": "Ne pas remplir ce champ",
+    "sending": "Envoi en cours…",
+    "fixErrors": "Certains champs sont à corriger. Vérifiez les messages sous les champs concernés.",
+    "networkError": "Votre demande n'a pas pu être envoyée. Vérifiez votre connexion, puis réessayez.",
+    "serverError": "Une erreur est survenue de notre côté. Réessayez dans quelques instants, ou écrivez-nous directement par e-mail.",
+    "captchaError": "La vérification anti-robots n'a pas abouti. Patientez quelques secondes, puis réessayez.",
+    "rateLimited": "Vous avez envoyé plusieurs demandes en peu de temps. Réessayez dans {minutes, plural, one {# minute} other {# minutes}}.",
     "errors": {
       "required": "Ce champ est obligatoire.",
       "tooLong": "Ce texte est trop long.",
@@ -318,6 +357,30 @@
       "invalidNumber": "Veuillez saisir un nombre entier, par exemple 5.",
       "fileTooLarge": "Ce fichier dépasse la taille maximale de 10\u00a0Mo.",
       "invalidFileType": "Ce format n'est pas accepté. Formats acceptés\u00a0: PDF, DOCX, PNG ou JPG."
+    }
+  },
+  "Emails": {
+    "signature": "L'équipe Aman & Partners",
+    "footer": "Vous recevez cet e-mail parce que vous avez envoyé une demande depuis le site d'Aman & Partners.",
+    "notProvided": "Non renseigné",
+    "contactAck": {
+      "subject": "Nous avons bien reçu votre message",
+      "greeting": "Bonjour {name},",
+      "body": "Merci pour votre message. Nous l'avons bien reçu et revenons vers vous rapidement.",
+      "recap": "Pour rappel, voici votre message\u00a0:"
+    },
+    "contactNotification": {
+      "subject": "Nouveau message de contact\u00a0: {name}",
+      "intro": "Un nouveau message a été envoyé depuis le formulaire de contact du site.",
+      "reply": "Répondez directement à cet e-mail pour écrire à {name}.",
+      "name": "Nom",
+      "company": "Entreprise",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "message": "Message",
+      "language": "Langue du site",
+      "source": "Origine",
+      "reference": "Référence"
     }
   },
   "FileUpload": {
