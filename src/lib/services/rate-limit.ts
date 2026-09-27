@@ -9,6 +9,8 @@ export const RATE_LIMITS = {
   contact: { limit: 5, windowSeconds: 60 * 60 },
   project: { limit: 5, windowSeconds: 60 * 60 },
   partner: { limit: 3, windowSeconds: 60 * 60 },
+  /** Tentatives de connexion au dashboard : 5 par quart d'heure. */
+  adminLogin: { limit: 5, windowSeconds: 15 * 60 },
 } as const;
 
 export type RateLimitScope = keyof typeof RATE_LIMITS;

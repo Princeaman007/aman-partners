@@ -580,6 +580,30 @@
       "reference": "Reference"
     }
   },
+  "Admin": {
+    "metaTitle": "Dashboard",
+    "login": {
+      "title": "Sign in to the dashboard",
+      "description": "Aman & Partners private area.",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "submitting": "Signing in…",
+      "invalidCredentials": "Incorrect credentials.",
+      "rateLimited": "Too many sign-in attempts. Please try again in {minutes, plural, one {# minute} other {# minutes}}.",
+      "serverError": "Sign-in could not be completed. Please try again in a few moments.",
+      "backToSite": "Back to the website"
+    },
+    "layout": {
+      "title": "Dashboard",
+      "logout": "Sign out",
+      "viewSite": "View the website"
+    },
+    "home": {
+      "title": "Welcome",
+      "text": "You are signed in to the Aman & Partners dashboard. The list of requests arrives in the next step."
+    }
+  },
   "FileUpload": {
     "choose": "Choose a file",
     "change": "Change file",

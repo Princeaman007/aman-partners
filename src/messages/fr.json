@@ -580,6 +580,30 @@
       "reference": "Référence"
     }
   },
+  "Admin": {
+    "metaTitle": "Dashboard",
+    "login": {
+      "title": "Connexion au dashboard",
+      "description": "Espace privé d'Aman & Partners.",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "submitting": "Connexion…",
+      "invalidCredentials": "Identifiants incorrects.",
+      "rateLimited": "Trop de tentatives de connexion. Réessayez dans {minutes, plural, one {# minute} other {# minutes}}.",
+      "serverError": "La connexion n'a pas pu aboutir. Réessayez dans quelques instants.",
+      "backToSite": "Retour au site"
+    },
+    "layout": {
+      "title": "Dashboard",
+      "logout": "Se déconnecter",
+      "viewSite": "Voir le site"
+    },
+    "home": {
+      "title": "Bienvenue",
+      "text": "Vous êtes connecté au dashboard d'Aman & Partners. La liste des demandes arrive à l'étape suivante."
+    }
+  },
   "FileUpload": {
     "choose": "Choisir un fichier",
     "change": "Changer de fichier",
