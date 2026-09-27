@@ -16,6 +16,11 @@ export function successResponse() {
   return respond({ ok: true }, 200);
 }
 
+/** Erreurs de champs déjà identifiées (par exemple une pièce jointe refusée). */
+export function fieldErrorsResponse(fieldErrors: FieldErrors) {
+  return respond({ ok: false, error: "validation", fieldErrors }, 400);
+}
+
 /** Données invalides : la première erreur de chaque champ, sous forme de clé traduisible. */
 export function validationErrorResponse(error: z.ZodError) {
   const fieldErrors: FieldErrors = {};
@@ -28,7 +33,7 @@ export function validationErrorResponse(error: z.ZodError) {
     fieldErrors[field] = isValidationErrorKey(issue.message) ? issue.message : "invalidOption";
   }
 
-  return respond({ ok: false, error: "validation", fieldErrors }, 400);
+  return fieldErrorsResponse(fieldErrors);
 }
 
 /** Vérification anti-robots échouée. */
@@ -53,4 +58,23 @@ export function parseLocale(value: unknown): AppLocale {
   return typeof value === "string" && hasLocale(routing.locales, value)
     ? value
     : routing.defaultLocale;
+}
+
+/** Lit un champ texte d'un formulaire multipart (les fichiers et champs absents donnent undefined). */
+export function readFormText(formData: FormData, name: string): string | undefined {
+  const value = formData.get(name);
+  return typeof value === "string" ? value : undefined;
+}
+
+/** Lit les paramètres de campagne, envoyés sous forme de texte JSON. Toute valeur illisible est ignorée. */
+export function readFormJson(formData: FormData, name: string): unknown {
+  const value = readFormText(formData, name);
+  if (!value) {
+    return undefined;
+  }
+  try {
+    return JSON.parse(value);
+  } catch {
+    return undefined;
+  }
 }

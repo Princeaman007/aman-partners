@@ -11,15 +11,7 @@ import {
   textDetails,
   type EmailDetail,
 } from "./layout";
-
-/** Origine de la demande d'après les paramètres de campagne, ou null si elle est inconnue. */
-function describeSource(tracking: ContactData["tracking"]): string | null {
-  if (!tracking) {
-    return null;
-  }
-  const parts = [tracking.utm_source, tracking.utm_medium, tracking.utm_campaign].filter(Boolean);
-  return parts.length > 0 ? parts.join(" / ") : null;
-}
+import { describeSource } from "./tracking";
 
 /** Accusé de réception envoyé au visiteur, dans la langue du site au moment de l'envoi. */
 export async function buildContactAcknowledgment(

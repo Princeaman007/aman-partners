@@ -303,6 +303,81 @@
     "successText": "Nous revenons vers vous rapidement. Un e-mail de confirmation vient de vous être envoyé.",
     "sendAnother": "Envoyer un autre message"
   },
+  "ProjectRequestPage": {
+    "eyebrow": "Demande de projet",
+    "title": "Présentez-nous votre projet.",
+    "description": "Quelques minutes suffisent. Plus votre description est précise, plus notre réponse sera adaptée à votre besoin.",
+    "nextTitle": "Ce qui se passe ensuite",
+    "next": {
+      "review": "Nous étudions votre demande et, si besoin, nous vous posons quelques questions.",
+      "proposal": "Nous vous adressons une proposition claire et détaillée, adaptée à votre projet.",
+      "start": "Vous décidez librement, et nous lançons le projet ensemble."
+    },
+    "privacyNote": "Vos informations servent uniquement à traiter votre demande. Elles ne sont jamais revendues ni transmises à des fins commerciales."
+  },
+  "ProjectRequestForm": {
+    "stepCounter": "Étape {current} sur {total}",
+    "steps": {
+      "contact": "Vos informations",
+      "project": "Votre projet",
+      "confirm": "Confirmation"
+    },
+    "next": "Continuer",
+    "previous": "Retour",
+    "lastName": "Nom",
+    "firstName": "Prénom",
+    "company": "Entreprise",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "projectType": "Type de projet",
+    "projectTypePlaceholder": "Sélectionnez un type de projet",
+    "description": "Description du projet",
+    "descriptionHint": "Décrivez votre besoin, vos objectifs, vos utilisateurs et vos contraintes.",
+    "budget": "Budget estimé",
+    "budgetPlaceholder": "Sélectionnez une fourchette",
+    "timeline": "Délai souhaité",
+    "timelinePlaceholder": "Sélectionnez un délai",
+    "hasSpecifications": "Avez-vous déjà un cahier des charges\u00a0?",
+    "hasDesign": "Avez-vous déjà un design ou des maquettes\u00a0?",
+    "yes": "Oui",
+    "no": "Non",
+    "attachment": "Pièce jointe",
+    "attachmentHint": "Cahier des charges, maquettes ou tout document utile. PDF, DOCX, PNG ou JPG, 10\u00a0Mo maximum.",
+    "summaryTitle": "Récapitulatif de votre demande",
+    "noAttachment": "Aucune pièce jointe",
+    "submit": "Envoyer ma demande",
+    "successTitle": "Merci pour votre demande.",
+    "successText": "Nous analysons votre projet et revenons vers vous rapidement. Un e-mail de confirmation vient de vous être envoyé.",
+    "sendAnother": "Envoyer une autre demande",
+    "projectTypes": {
+      "showcase": "Site vitrine",
+      "ecommerce": "E-commerce",
+      "webApp": "Application web",
+      "mobileApp": "Application mobile",
+      "saas": "SaaS",
+      "erp": "ERP",
+      "crm": "CRM",
+      "automation": "Automatisation",
+      "ai": "Intelligence artificielle",
+      "other": "Autre"
+    },
+    "budgets": {
+      "under1k": "Moins de 1\u00a0000\u00a0€",
+      "1kTo3k": "1\u00a0000 – 3\u00a0000\u00a0€",
+      "3kTo5k": "3\u00a0000 – 5\u00a0000\u00a0€",
+      "5kTo10k": "5\u00a0000 – 10\u00a0000\u00a0€",
+      "over10k": "Plus de 10\u00a0000\u00a0€",
+      "unknown": "Je ne sais pas encore"
+    },
+    "timelines": {
+      "asap": "Dès que possible",
+      "1to3Months": "1 à 3 mois",
+      "3to6Months": "3 à 6 mois",
+      "over6Months": "Plus de 6 mois",
+      "flexible": "Flexible"
+    }
+  },
   "FAQ": {
     "eyebrow": "Questions fréquentes",
     "title": "Vos questions, nos réponses",
@@ -378,6 +453,33 @@
       "email": "E-mail",
       "phone": "Téléphone",
       "message": "Message",
+      "language": "Langue du site",
+      "source": "Origine",
+      "reference": "Référence"
+    },
+    "projectAck": {
+      "subject": "Nous avons bien reçu votre demande de projet",
+      "greeting": "Bonjour {name},",
+      "body": "Merci pour votre demande. Nous analysons votre projet et revenons vers vous rapidement.",
+      "recap": "Voici le récapitulatif de votre demande\u00a0:"
+    },
+    "projectNotification": {
+      "subject": "Nouvelle demande de projet\u00a0: {name} ({projectType})",
+      "intro": "Une nouvelle demande de projet a été envoyée depuis le site.",
+      "reply": "Répondez directement à cet e-mail pour écrire à {name}.",
+      "name": "Nom",
+      "company": "Entreprise",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "country": "Pays",
+      "projectType": "Type de projet",
+      "budget": "Budget estimé",
+      "timeline": "Délai souhaité",
+      "hasSpecifications": "Cahier des charges existant",
+      "hasDesign": "Design existant",
+      "description": "Description du projet",
+      "attachment": "Pièce jointe",
+      "attachmentIncluded": "{name} (jointe à cet e-mail)",
       "language": "Langue du site",
       "source": "Origine",
       "reference": "Référence"
