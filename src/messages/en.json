@@ -378,6 +378,74 @@
       "flexible": "Flexible"
     }
   },
+  "PartnersPage": {
+    "eyebrow": "Partners",
+    "title": "Are you a developer, freelancer or agency? Join our network.",
+    "description": "We entrust our network with the projects that match its skills. Tell us about your profile: we'll get back to you when a project is a good fit.",
+    "whyTitle": "Why join the network",
+    "why": {
+      "qualified": "Projects that have already been analysed: needs, scope and goals are clarified before they reach you.",
+      "technical": "A point of contact who is a developer himself, and speaks your language.",
+      "matching": "Assignments offered according to your specialties and availability."
+    },
+    "commitment": "Joining the network commits you to nothing: every assignment is offered, never imposed."
+  },
+  "PartnerForm": {
+    "profileTitle": "Your profile",
+    "skillsTitle": "Your skills",
+    "linksTitle": "Your links and message",
+    "name": "Full name, or agency name",
+    "email": "Email",
+    "country": "Country",
+    "status": "Status",
+    "statusPlaceholder": "Select your status",
+    "availability": "Availability",
+    "availabilityPlaceholder": "Select your availability",
+    "specialties": "Specialties",
+    "specialtiesHint": "Several choices possible.",
+    "technologies": "Technologies",
+    "technologiesHint": "For example: React, Next.js, Laravel, PostgreSQL.",
+    "experienceYears": "Years of experience",
+    "dailyRate": "Daily rate",
+    "dailyRateHint": "Optional. For example: €450 excl. VAT.",
+    "portfolio": "Portfolio",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "urlHint": "Full address, starting with https://",
+    "message": "Message",
+    "messageHint": "Optional. Anything you'd like us to know about you or the way you work.",
+    "submit": "Send my application",
+    "successTitle": "Thank you for your application.",
+    "successText": "We are reviewing your profile and will get back to you when a project matches your skills. A confirmation email has just been sent to you.",
+    "statuses": {
+      "freelance": "Freelancer",
+      "agency": "Agency",
+      "other": "Other"
+    },
+    "availabilities": {
+      "now": "Immediately",
+      "withinMonth": "Within a month",
+      "withinThreeMonths": "Within three months",
+      "later": "Later"
+    },
+    "specialtyOptions": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "mobile": "Mobile",
+      "uiux": "UI/UX",
+      "wordpress": "WordPress",
+      "shopify": "Shopify",
+      "dotnet": ".NET",
+      "java": "Java",
+      "php": "PHP",
+      "nodejs": "Node.js",
+      "python": "Python",
+      "devops": "DevOps",
+      "cloud": "Cloud",
+      "ai": "AI"
+    }
+  },
   "FAQ": {
     "eyebrow": "FAQ",
     "title": "Your questions, answered",
@@ -482,6 +550,33 @@
       "attachmentIncluded": "{name} (attached to this email)",
       "language": "Website language",
       "source": "Source",
+      "reference": "Reference"
+    },
+    "partnerAck": {
+      "subject": "We have received your application",
+      "greeting": "Hello {name},",
+      "body": "Thank you for your interest in the Aman & Partners network. We are reviewing your profile and will get back to you when a project matches your skills.",
+      "recap": "Here is a summary of your application:"
+    },
+    "partnerNotification": {
+      "subject": "New partner application: {name}",
+      "intro": "A new application has been sent from the website Partners page.",
+      "reply": "Reply directly to this email to write to {name}.",
+      "name": "Name",
+      "email": "Email",
+      "country": "Country",
+      "status": "Status",
+      "availability": "Availability",
+      "specialties": "Specialties",
+      "technologies": "Technologies",
+      "experienceYears": "Experience",
+      "experienceValue": "{years, plural, =0 {Less than a year} one {# year} other {# years}}",
+      "dailyRate": "Daily rate",
+      "portfolio": "Portfolio",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "message": "Message",
+      "language": "Website language",
       "reference": "Reference"
     }
   },

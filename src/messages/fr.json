@@ -378,6 +378,74 @@
       "flexible": "Flexible"
     }
   },
+  "PartnersPage": {
+    "eyebrow": "Partenaires",
+    "title": "Vous êtes développeur, freelance ou agence\u00a0? Rejoignez notre réseau.",
+    "description": "Nous confions à notre réseau les projets qui correspondent à ses compétences. Présentez-nous votre profil\u00a0: nous vous recontacterons lorsqu'un projet vous correspond.",
+    "whyTitle": "Pourquoi rejoindre le réseau",
+    "why": {
+      "qualified": "Des projets déjà analysés\u00a0: besoin, périmètre et objectifs sont clarifiés avant de vous être proposés.",
+      "technical": "Un interlocuteur qui est lui-même développeur, et qui parle votre langage.",
+      "matching": "Des missions proposées selon vos spécialités et vos disponibilités."
+    },
+    "commitment": "Rejoindre le réseau ne vous engage à rien\u00a0: chaque mission vous est proposée, jamais imposée."
+  },
+  "PartnerForm": {
+    "profileTitle": "Votre profil",
+    "skillsTitle": "Vos compétences",
+    "linksTitle": "Vos liens et votre message",
+    "name": "Nom et prénom, ou nom de l'agence",
+    "email": "E-mail",
+    "country": "Pays",
+    "status": "Statut",
+    "statusPlaceholder": "Sélectionnez votre statut",
+    "availability": "Disponibilité",
+    "availabilityPlaceholder": "Sélectionnez votre disponibilité",
+    "specialties": "Spécialités",
+    "specialtiesHint": "Plusieurs choix possibles.",
+    "technologies": "Technologies",
+    "technologiesHint": "Par exemple\u00a0: React, Next.js, Laravel, PostgreSQL.",
+    "experienceYears": "Années d'expérience",
+    "dailyRate": "Tarif journalier",
+    "dailyRateHint": "Facultatif. Par exemple\u00a0: 450\u00a0€ HTVA.",
+    "portfolio": "Portfolio",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "urlHint": "Adresse complète, commençant par https://",
+    "message": "Message",
+    "messageHint": "Facultatif. Ce que vous aimeriez que nous sachions sur vous ou votre façon de travailler.",
+    "submit": "Envoyer ma candidature",
+    "successTitle": "Merci pour votre candidature.",
+    "successText": "Nous étudions votre profil et vous recontacterons lorsqu'un projet correspond à vos compétences. Un e-mail de confirmation vient de vous être envoyé.",
+    "statuses": {
+      "freelance": "Freelance",
+      "agency": "Agence",
+      "other": "Autre"
+    },
+    "availabilities": {
+      "now": "Immédiate",
+      "withinMonth": "Sous un mois",
+      "withinThreeMonths": "Sous trois mois",
+      "later": "Plus tard"
+    },
+    "specialtyOptions": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "mobile": "Mobile",
+      "uiux": "UI/UX",
+      "wordpress": "WordPress",
+      "shopify": "Shopify",
+      "dotnet": ".NET",
+      "java": "Java",
+      "php": "PHP",
+      "nodejs": "Node.js",
+      "python": "Python",
+      "devops": "DevOps",
+      "cloud": "Cloud",
+      "ai": "IA"
+    }
+  },
   "FAQ": {
     "eyebrow": "Questions fréquentes",
     "title": "Vos questions, nos réponses",
@@ -482,6 +550,33 @@
       "attachmentIncluded": "{name} (jointe à cet e-mail)",
       "language": "Langue du site",
       "source": "Origine",
+      "reference": "Référence"
+    },
+    "partnerAck": {
+      "subject": "Nous avons bien reçu votre candidature",
+      "greeting": "Bonjour {name},",
+      "body": "Merci pour votre intérêt pour le réseau Aman & Partners. Nous étudions votre profil et vous recontacterons lorsqu'un projet correspond à vos compétences.",
+      "recap": "Voici le récapitulatif de votre candidature\u00a0:"
+    },
+    "partnerNotification": {
+      "subject": "Nouvelle candidature partenaire\u00a0: {name}",
+      "intro": "Une nouvelle candidature a été envoyée depuis la page Partenaires du site.",
+      "reply": "Répondez directement à cet e-mail pour écrire à {name}.",
+      "name": "Nom",
+      "email": "E-mail",
+      "country": "Pays",
+      "status": "Statut",
+      "availability": "Disponibilité",
+      "specialties": "Spécialités",
+      "technologies": "Technologies",
+      "experienceYears": "Expérience",
+      "experienceValue": "{years, plural, =0 {Moins d'un an} one {# an} other {# ans}}",
+      "dailyRate": "Tarif journalier",
+      "portfolio": "Portfolio",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "message": "Message",
+      "language": "Langue du site",
       "reference": "Référence"
     }
   },
