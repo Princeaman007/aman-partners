@@ -597,11 +597,23 @@
     "layout": {
       "title": "Dashboard",
       "logout": "Se déconnecter",
-      "viewSite": "Voir le site"
+      "viewSite": "Voir le site",
+      "newTab": "(s'ouvre dans un nouvel onglet)",
+      "navLabel": "Navigation du dashboard",
+      "skipToContent": "Aller au contenu",
+      "home": "Aman & Partners, vue d'ensemble du dashboard"
+    },
+    "nav": {
+      "overview": "Vue d'ensemble",
+      "requests": "Toutes les demandes",
+      "shortcuts": "Par type",
+      "projects": "Demandes de projet",
+      "contacts": "Messages",
+      "partners": "Candidatures"
     },
     "home": {
-      "title": "Bienvenue",
-      "text": "Vous êtes connecté au dashboard d'Aman & Partners. La liste des demandes arrive à l'étape suivante."
+      "title": "Vue d'ensemble",
+      "text": "Retrouvez ici toutes les demandes reçues par le site. Les compteurs et la liste des demandes arrivent à l'étape suivante."
     }
   },
   "FileUpload": {

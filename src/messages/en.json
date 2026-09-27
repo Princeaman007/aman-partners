@@ -597,11 +597,23 @@
     "layout": {
       "title": "Dashboard",
       "logout": "Sign out",
-      "viewSite": "View the website"
+      "viewSite": "View the website",
+      "newTab": "(opens in a new tab)",
+      "navLabel": "Dashboard navigation",
+      "skipToContent": "Skip to content",
+      "home": "Aman & Partners, dashboard overview"
+    },
+    "nav": {
+      "overview": "Overview",
+      "requests": "All requests",
+      "shortcuts": "By type",
+      "projects": "Project requests",
+      "contacts": "Messages",
+      "partners": "Applications"
     },
     "home": {
-      "title": "Welcome",
-      "text": "You are signed in to the Aman & Partners dashboard. The list of requests arrives in the next step."
+      "title": "Overview",
+      "text": "All the requests received by the website are gathered here. The counters and the list of requests arrive in the next step."
     }
   },
   "FileUpload": {
