@@ -1,0 +1,493 @@
+{
+  "Legal": {
+    "common": {
+      "toValidate": "[À FAIRE VALIDER] Ce texte est un projet. Il doit être relu et validé par un professionnel du droit avant la mise en ligne du site.",
+      "lastUpdated": "Dernière mise à jour\u00a0: {date}",
+      "updatedDate": "[À COMPLÉTER]",
+      "tocLabel": "Sommaire",
+      "backToTop": "Retour en haut de la page"
+    },
+    "notice": {
+      "eyebrow": "Légal",
+      "title": "Mentions légales",
+      "description": "Les informations sur l'éditeur du site, son hébergement et les conditions d'utilisation de son contenu.",
+      "sections": {
+        "editor": {
+          "title": "Éditeur du site",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Le présent site est édité par\u00a0:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Dénomination\u00a0: [À COMPLÉTER]",
+                "Forme juridique\u00a0: [À COMPLÉTER]",
+                "Adresse du siège\u00a0: [À COMPLÉTER], Belgique",
+                "Numéro d'entreprise (BCE)\u00a0: [À COMPLÉTER]",
+                "Numéro de TVA\u00a0: [À COMPLÉTER]",
+                "E-mail\u00a0: [À COMPLÉTER]",
+                "Téléphone\u00a0: [À COMPLÉTER]",
+                "Responsable de la publication\u00a0: Prince Aman"
+              ]
+            }
+          ]
+        },
+        "hosting": {
+          "title": "Hébergement",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Le site est hébergé par Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis (vercel.com). Les traitements côté serveur du site sont exécutés dans la région de Francfort (Allemagne)."
+            }
+          ]
+        },
+        "activity": {
+          "title": "Activité",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Aman & Partners accompagne les entreprises dans leurs projets digitaux\u00a0: analyse du besoin, proposition de solution, réalisation du projet par Aman & Partners ou par des prestataires sélectionnés dans son réseau, pilotage et livraison. Aman & Partners reste l'interlocuteur unique de ses clients."
+            }
+          ]
+        },
+        "intellectualProperty": {
+          "title": "Propriété intellectuelle",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "L'ensemble du contenu du site (textes, logo, symbole, visuels, mise en page et code) est la propriété d'Aman & Partners, sauf mention contraire. Toute reproduction, représentation ou adaptation, totale ou partielle, sans autorisation écrite préalable, est interdite."
+            },
+            {
+              "type": "p",
+              "text": "Les noms de produits, de services ou de technologies cités sur le site peuvent être des marques appartenant à leurs titulaires respectifs."
+            }
+          ]
+        },
+        "liability": {
+          "title": "Responsabilité",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Aman & Partners veille à publier des informations exactes et à jour, sans pouvoir en garantir l'exhaustivité. Les informations du site sont fournies à titre indicatif et ne constituent pas une offre contractuelle\u00a0: chaque projet fait l'objet d'une proposition et d'un contrat spécifiques."
+            },
+            {
+              "type": "p",
+              "text": "Le site peut contenir des liens vers des sites tiers. Aman & Partners n'exerce aucun contrôle sur leur contenu et décline toute responsabilité à leur égard."
+            }
+          ]
+        },
+        "personalData": {
+          "title": "Données personnelles et cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Le traitement des données personnelles transmises par les formulaires du site est décrit dans la politique de confidentialité. L'utilisation des cookies est décrite dans la politique de cookies. Ces deux pages sont accessibles depuis le pied de chaque page du site."
+            }
+          ]
+        },
+        "law": {
+          "title": "Droit applicable",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Les présentes mentions légales sont régies par le droit belge. Sous réserve des règles impératives applicables, tout litige relève de la compétence des tribunaux de l'arrondissement judiciaire du siège d'Aman & Partners\u00a0: [À COMPLÉTER]."
+            }
+          ]
+        },
+        "contact": {
+          "title": "Contact",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Pour toute question relative au site, vous pouvez écrire à [À COMPLÉTER] ou utiliser le formulaire de la page Contact."
+            }
+          ]
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Légal",
+      "title": "Politique de confidentialité",
+      "description": "Quelles données nous collectons, pourquoi, combien de temps nous les conservons, et comment exercer vos droits.",
+      "sections": {
+        "controller": {
+          "title": "Responsable du traitement",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Le responsable du traitement des données personnelles collectées sur ce site est Aman & Partners\u00a0: [À COMPLÉTER — dénomination, forme juridique, adresse et numéro d'entreprise, identiques aux mentions légales]."
+            },
+            {
+              "type": "p",
+              "text": "Pour toute question relative à vos données, vous pouvez nous écrire à [À COMPLÉTER]."
+            }
+          ]
+        },
+        "data": {
+          "title": "Données collectées",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nous collectons uniquement les données que vous nous transmettez par les formulaires du site, ainsi que quelques données techniques nécessaires à leur traitement\u00a0:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Formulaire de contact\u00a0: nom, entreprise (facultatif), adresse e-mail, téléphone (facultatif) et message.",
+                "Demande de projet\u00a0: nom, prénom, entreprise (facultatif), adresse e-mail, téléphone (facultatif), pays, informations sur votre projet (type, description, budget estimé, délai, existence d'un cahier des charges et d'un design) et, le cas échéant, le document que vous joignez.",
+                "Candidature partenaire\u00a0: nom ou nom de l'agence, adresse e-mail, pays, statut, disponibilité, spécialités, technologies, années d'expérience et, le cas échéant, tarif journalier, liens (portfolio, LinkedIn, GitHub) et message.",
+                "Pour chaque formulaire\u00a0: la langue du site, la date et l'heure de votre accord, et l'origine de votre visite (paramètres de campagne publicitaire présents dans l'adresse, comme utm_source). Les identifiants de clic publicitaire (gclid, fbclid) ne sont conservés que si vous avez accepté les cookies publicitaires.",
+                "Données techniques\u00a0: pour limiter les envois abusifs, votre adresse IP est transformée en une empreinte irréversible, conservée au plus 24 heures\u00a0; l'adresse IP elle-même n'est jamais enregistrée. La vérification anti-robots (Cloudflare Turnstile) traite également des informations techniques sur votre navigateur."
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Nous vous demandons de ne transmettre aucune donnée sensible (santé, opinions, etc.) dans vos messages ou documents."
+            }
+          ]
+        },
+        "purposes": {
+          "title": "Finalités et bases légales",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Finalité", "Base légale (RGPD)"],
+              "rows": [
+                [
+                  "Répondre à votre message ou à votre demande de projet, et préparer une proposition",
+                  "Mesures précontractuelles prises à votre demande (article 6, paragraphe 1, b)"
+                ],
+                [
+                  "Étudier votre candidature et vous proposer des missions",
+                  "Mesures précontractuelles prises à votre demande (article 6, paragraphe 1, b)"
+                ],
+                [
+                  "Assurer le suivi de votre demande et de la relation commerciale",
+                  "Intérêt légitime d'Aman & Partners à gérer ses relations commerciales (article 6, paragraphe 1, f)"
+                ],
+                [
+                  "Protéger le site contre le spam et les abus",
+                  "Intérêt légitime d'Aman & Partners à assurer la sécurité du site (article 6, paragraphe 1, f)"
+                ],
+                [
+                  "Conserver les pièces comptables des clients",
+                  "Obligation légale (article 6, paragraphe 1, c)"
+                ],
+                [
+                  "Mesurer l'audience du site et l'efficacité de nos campagnes publicitaires",
+                  "Votre consentement, donné dans la bannière de cookies et retirable à tout moment (article 6, paragraphe 1, a)"
+                ]
+              ]
+            }
+          ]
+        },
+        "recipients": {
+          "title": "Destinataires et sous-traitants",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Vos données sont destinées à Aman & Partners. Elles ne sont jamais vendues ni louées. Pour faire fonctionner le site, nous faisons appel aux sous-traitants suivants, liés par des engagements de protection des données\u00a0:"
+            },
+            {
+              "type": "table",
+              "headers": ["Prestataire", "Rôle", "Localisation des données"],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Hébergement et fonctionnement du site",
+                  "Traitements exécutés à Francfort (Allemagne)\u00a0; société établie aux États-Unis"
+                ],
+                [
+                  "Neon Inc.",
+                  "Base de données des demandes",
+                  "Francfort (Allemagne)\u00a0; société établie aux États-Unis"
+                ],
+                [
+                  "Cloudflare, Inc.",
+                  "Stockage des documents joints (Cloudflare R2) et vérification anti-robots (Turnstile)",
+                  "Documents conservés dans l'Union européenne\u00a0; vérification anti-robots sur le réseau mondial de Cloudflare"
+                ],
+                [
+                  "Infomaniak Network SA",
+                  "Envoi des e-mails de notification et d'accusé de réception",
+                  "Suisse"
+                ],
+                [
+                  "Google Ireland Limited",
+                  "Mesure d'audience et de publicité, uniquement avec votre consentement",
+                  "Union européenne et États-Unis"
+                ],
+                [
+                  "Meta Platforms Ireland Limited",
+                  "Mesure de publicité, uniquement avec votre consentement",
+                  "Union européenne et États-Unis"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Lorsque la réalisation de votre projet est confiée à un prestataire de notre réseau (freelance ou agence), nous lui transmettons uniquement les informations nécessaires à cette réalisation, dans le cadre d'un engagement de confidentialité. Aman & Partners reste votre interlocuteur."
+            }
+          ]
+        },
+        "transfers": {
+          "title": "Transferts hors de l'Union européenne",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Certains de nos sous-traitants sont établis hors de l'Union européenne ou peuvent y accéder à des données. Ces transferts sont encadrés par les garanties prévues par le RGPD\u00a0: la décision d'adéquation de la Commission européenne pour la Suisse, le cadre de protection des données UE–États-Unis (Data Privacy Framework) pour les prestataires certifiés, et, à défaut, les clauses contractuelles types adoptées par la Commission européenne."
+            }
+          ]
+        },
+        "retention": {
+          "title": "Durées de conservation",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Données", "Durée de conservation"],
+              "rows": [
+                [
+                  "Messages, demandes de projet et candidatures sans suite, avec leurs notes internes et documents joints",
+                  "3 ans à compter du dernier contact"
+                ],
+                [
+                  "Données des clients",
+                  "Durée de la relation contractuelle, puis durées légales (7 ans pour les pièces comptables)"
+                ],
+                [
+                  "Empreintes irréversibles des adresses IP (limitation des envois)",
+                  "24 heures au maximum"
+                ],
+                ["Votre choix concernant les cookies", "6 mois"],
+                ["Cookies de mesure d'audience et de publicité", "Voir la politique de cookies"]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "À l'issue de ces durées, les données sont supprimées ou rendues anonymes."
+            }
+          ]
+        },
+        "rights": {
+          "title": "Vos droits",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Conformément au RGPD, vous disposez des droits suivants sur vos données\u00a0:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Droit d'accès\u00a0: savoir quelles données nous détenons sur vous et en obtenir une copie.",
+                "Droit de rectification\u00a0: faire corriger des données inexactes ou incomplètes.",
+                "Droit à l'effacement\u00a0: demander la suppression de vos données, sauf si nous devons les conserver pour respecter une obligation légale.",
+                "Droit à la limitation du traitement\u00a0: demander la suspension temporaire de l'utilisation de vos données.",
+                "Droit d'opposition\u00a0: vous opposer à un traitement fondé sur notre intérêt légitime.",
+                "Droit à la portabilité\u00a0: recevoir les données que vous nous avez fournies dans un format structuré et couramment utilisé.",
+                "Droit de retirer votre consentement à tout moment, pour les cookies de mesure et de publicité, sans que cela remette en cause les traitements déjà effectués."
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Pour exercer ces droits, écrivez-nous à [À COMPLÉTER]. Nous vous répondrons dans un délai d'un mois. En cas de doute raisonnable sur votre identité, nous pourrons vous demander des informations complémentaires."
+            }
+          ]
+        },
+        "complaint": {
+          "title": "Réclamation",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Si vous estimez que le traitement de vos données ne respecte pas la réglementation, vous pouvez introduire une réclamation auprès de l'Autorité de protection des données\u00a0: rue de la Presse 35, 1000 Bruxelles, www.autoriteprotectiondonnees.be."
+            }
+          ]
+        },
+        "security": {
+          "title": "Sécurité",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nous mettons en œuvre des mesures techniques et organisationnelles adaptées pour protéger vos données, notamment\u00a0:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "des échanges chiffrés entre votre navigateur et le site (HTTPS)\u00a0;",
+                "un accès aux demandes réservé à Aman & Partners, protégé par une authentification sécurisée\u00a0;",
+                "des documents joints qui ne sont jamais publics, accessibles uniquement par des liens temporaires\u00a0;",
+                "une protection contre les envois automatisés, sans enregistrement des adresses IP\u00a0;",
+                "un stockage des demandes et des documents dans l'Union européenne."
+              ]
+            }
+          ]
+        },
+        "automatedDecisions": {
+          "title": "Décision automatisée",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Vos données ne font l'objet d'aucune décision entièrement automatisée ni d'aucun profilage produisant des effets juridiques à votre égard. Chaque demande est étudiée par une personne."
+            }
+          ]
+        },
+        "changes": {
+          "title": "Modifications",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Cette politique peut être mise à jour, notamment en cas d'évolution du site ou de la réglementation. La date de dernière mise à jour figure en haut de cette page."
+            }
+          ]
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "Légal",
+      "title": "Politique de cookies",
+      "description": "Les cookies utilisés sur le site, leur utilité, leur durée, et comment modifier votre choix à tout moment.",
+      "manageTitle": "Modifier mon choix",
+      "manageText": "Vous pouvez à tout moment accepter ou refuser les cookies de mesure d'audience et de publicité.",
+      "sections": {
+        "definition": {
+          "title": "Qu'est-ce qu'un cookie\u00a0?",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Un cookie est un petit fichier déposé sur votre appareil lorsque vous visitez un site. Il permet au site de mémoriser des informations, comme vos préférences, ou de mesurer sa fréquentation. Cette politique concerne aussi les technologies similaires, comme le stockage local du navigateur."
+            }
+          ]
+        },
+        "choice": {
+          "title": "Votre choix",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Lors de votre première visite, une bannière vous permet d'accepter, de refuser ou de personnaliser les cookies, avec la même facilité. Seuls les cookies nécessaires au fonctionnement du site sont utilisés sans votre accord."
+            },
+            {
+              "type": "p",
+              "text": "Aucun script de mesure d'audience ou de publicité (Google, Meta) n'est chargé avant votre consentement. Votre choix est conservé 6 mois, puis la bannière vous est de nouveau proposée. Vous pouvez le modifier à tout moment avec le bouton en bas de cette page, ou le lien «\u00a0Gérer les cookies\u00a0» présent dans le pied de chaque page."
+            }
+          ]
+        },
+        "necessary": {
+          "title": "Cookies nécessaires",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Ces cookies sont indispensables au fonctionnement et à la sécurité du site. Ils ne nécessitent pas votre consentement."
+            },
+            {
+              "type": "table",
+              "headers": ["Nom", "Fournisseur", "Finalité", "Durée"],
+              "rows": [
+                [
+                  "ap_consent",
+                  "Aman & Partners",
+                  "Mémoriser votre choix concernant les cookies",
+                  "6 mois"
+                ],
+                [
+                  "Stockage local du navigateur",
+                  "Aman & Partners",
+                  "Mémoriser votre préférence d'affichage (thème clair ou sombre)",
+                  "Jusqu'à sa suppression dans votre navigateur"
+                ],
+                [
+                  "ap_admin_session",
+                  "Aman & Partners",
+                  "Session de connexion à l'espace d'administration, réservé à Aman & Partners\u00a0; jamais déposé chez les visiteurs",
+                  "8 heures"
+                ],
+                [
+                  "[À VÉRIFIER] Cookies techniques de Cloudflare Turnstile",
+                  "Cloudflare",
+                  "Vérifier que les formulaires sont envoyés par une personne et non par un robot",
+                  "[À VÉRIFIER]"
+                ]
+              ]
+            }
+          ]
+        },
+        "analytics": {
+          "title": "Cookies de mesure d'audience",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Avec votre accord, ces cookies nous aident à comprendre comment le site est utilisé (pages consultées, parcours, appareils), afin de l'améliorer."
+            },
+            {
+              "type": "table",
+              "headers": ["Nom", "Fournisseur", "Finalité", "Durée"],
+              "rows": [
+                [
+                  "_ga",
+                  "Google (Google Analytics)",
+                  "Distinguer les visiteurs de façon anonyme",
+                  "13 mois"
+                ],
+                [
+                  "_ga_[identifiant]",
+                  "Google (Google Analytics)",
+                  "Conserver l'état de la visite en cours",
+                  "13 mois"
+                ]
+              ]
+            }
+          ]
+        },
+        "advertising": {
+          "title": "Cookies publicitaires",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Avec votre accord, ces cookies nous permettent de mesurer l'efficacité de nos campagnes publicitaires sur Google, Facebook et Instagram, c'est-à-dire de savoir combien de demandes chaque campagne nous apporte."
+            },
+            {
+              "type": "table",
+              "headers": ["Nom", "Fournisseur", "Finalité", "Durée"],
+              "rows": [
+                [
+                  "_gcl_au",
+                  "Google (Google Ads)",
+                  "Mesurer les conversions issues de nos annonces Google",
+                  "90 jours"
+                ],
+                [
+                  "_fbp",
+                  "Meta (Facebook, Instagram)",
+                  "Mesurer l'efficacité de nos annonces sur Facebook et Instagram",
+                  "90 jours"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Google et Meta peuvent également déposer des cookies sur leurs propres domaines, selon leurs propres politiques, que nous vous invitons à consulter."
+            }
+          ]
+        },
+        "browser": {
+          "title": "Réglages de votre navigateur",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Vous pouvez aussi configurer votre navigateur pour bloquer ou supprimer les cookies. Le blocage des cookies nécessaires peut toutefois empêcher certaines fonctions du site, comme l'envoi des formulaires."
+            }
+          ]
+        },
+        "moreInfo": {
+          "title": "Plus d'informations",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Pour en savoir plus sur le traitement de vos données personnelles et sur vos droits, consultez notre politique de confidentialité."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

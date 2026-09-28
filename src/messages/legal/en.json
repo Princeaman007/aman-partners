@@ -1,0 +1,482 @@
+{
+  "Legal": {
+    "common": {
+      "toValidate": "[À FAIRE VALIDER] This text is a draft. It must be reviewed and approved by a legal professional before the website goes live.",
+      "lastUpdated": "Last updated: {date}",
+      "updatedDate": "[À COMPLÉTER]",
+      "tocLabel": "Contents",
+      "backToTop": "Back to top"
+    },
+    "notice": {
+      "eyebrow": "Legal",
+      "title": "Legal notice",
+      "description": "Information about the publisher of the website, its hosting and the terms of use of its content.",
+      "sections": {
+        "editor": {
+          "title": "Website publisher",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "This website is published by:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Company name: [À COMPLÉTER]",
+                "Legal form: [À COMPLÉTER]",
+                "Registered address: [À COMPLÉTER], Belgium",
+                "Company number (CBE): [À COMPLÉTER]",
+                "VAT number: [À COMPLÉTER]",
+                "Email: [À COMPLÉTER]",
+                "Phone: [À COMPLÉTER]",
+                "Publication manager: Prince Aman"
+              ]
+            }
+          ]
+        },
+        "hosting": {
+          "title": "Hosting",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The website is hosted by Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States (vercel.com). The website's server-side processing runs in the Frankfurt region (Germany)."
+            }
+          ]
+        },
+        "activity": {
+          "title": "Activity",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Aman & Partners supports businesses with their digital projects: needs analysis, solution proposal, delivery of the project by Aman & Partners or by providers selected from its network, project management and delivery. Aman & Partners remains its clients' single point of contact."
+            }
+          ]
+        },
+        "intellectualProperty": {
+          "title": "Intellectual property",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "All content on the website (texts, logo, symbol, visuals, layout and code) is the property of Aman & Partners, unless stated otherwise. Any reproduction, representation or adaptation, in whole or in part, without prior written permission is prohibited."
+            },
+            {
+              "type": "p",
+              "text": "Product, service or technology names mentioned on the website may be trademarks belonging to their respective owners."
+            }
+          ]
+        },
+        "liability": {
+          "title": "Liability",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Aman & Partners strives to publish accurate and up-to-date information, but cannot guarantee that it is complete. The information on the website is provided for guidance only and does not constitute a contractual offer: each project is subject to a specific proposal and contract."
+            },
+            {
+              "type": "p",
+              "text": "The website may contain links to third-party websites. Aman & Partners has no control over their content and accepts no liability for them."
+            }
+          ]
+        },
+        "personalData": {
+          "title": "Personal data and cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The processing of personal data sent through the website's forms is described in the privacy policy. The use of cookies is described in the cookie policy. Both pages are available from the footer of every page."
+            }
+          ]
+        },
+        "law": {
+          "title": "Applicable law",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "This legal notice is governed by Belgian law. Subject to applicable mandatory rules, any dispute falls under the jurisdiction of the courts of the judicial district of Aman & Partners' registered office: [À COMPLÉTER]."
+            }
+          ]
+        },
+        "contact": {
+          "title": "Contact",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "For any question about the website, you can write to [À COMPLÉTER] or use the form on the Contact page."
+            }
+          ]
+        }
+      }
+    },
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy policy",
+      "description": "What data we collect, why, how long we keep it, and how to exercise your rights.",
+      "sections": {
+        "controller": {
+          "title": "Data controller",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The controller of the personal data collected on this website is Aman & Partners: [À COMPLÉTER — company name, legal form, address and company number, as in the legal notice]."
+            },
+            {
+              "type": "p",
+              "text": "For any question about your data, you can write to us at [À COMPLÉTER]."
+            }
+          ]
+        },
+        "data": {
+          "title": "Data collected",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "We only collect the data you send us through the website's forms, along with some technical data needed to process them:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Contact form: name, company (optional), email address, phone (optional) and message.",
+                "Project request: last name, first name, company (optional), email address, phone (optional), country, information about your project (type, description, estimated budget, timeline, whether specifications and a design exist) and, where applicable, the document you attach.",
+                "Partner application: name or agency name, email address, country, status, availability, specialties, technologies, years of experience and, where applicable, daily rate, links (portfolio, LinkedIn, GitHub) and message.",
+                "For every form: the website language, the date and time of your consent, and the source of your visit (advertising campaign parameters present in the address, such as utm_source). Ad click identifiers (gclid, fbclid) are only kept if you have accepted advertising cookies.",
+                "Technical data: to limit abusive submissions, your IP address is turned into an irreversible fingerprint, kept for no more than 24 hours; the IP address itself is never stored. The anti-bot check (Cloudflare Turnstile) also processes technical information about your browser."
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Please do not send any sensitive data (health, opinions, etc.) in your messages or documents."
+            }
+          ]
+        },
+        "purposes": {
+          "title": "Purposes and legal bases",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Purpose", "Legal basis (GDPR)"],
+              "rows": [
+                [
+                  "Answering your message or project request, and preparing a proposal",
+                  "Pre-contractual steps taken at your request (Article 6(1)(b))"
+                ],
+                [
+                  "Reviewing your application and offering you assignments",
+                  "Pre-contractual steps taken at your request (Article 6(1)(b))"
+                ],
+                [
+                  "Following up on your request and the business relationship",
+                  "Legitimate interest of Aman & Partners in managing its business relationships (Article 6(1)(f))"
+                ],
+                [
+                  "Protecting the website against spam and abuse",
+                  "Legitimate interest of Aman & Partners in securing the website (Article 6(1)(f))"
+                ],
+                ["Keeping clients' accounting records", "Legal obligation (Article 6(1)(c))"],
+                [
+                  "Measuring website traffic and the effectiveness of our advertising campaigns",
+                  "Your consent, given in the cookie banner and withdrawable at any time (Article 6(1)(a))"
+                ]
+              ]
+            }
+          ]
+        },
+        "recipients": {
+          "title": "Recipients and processors",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Your data is intended for Aman & Partners. It is never sold or rented. To run the website, we use the following processors, bound by data protection commitments:"
+            },
+            {
+              "type": "table",
+              "headers": ["Provider", "Role", "Data location"],
+              "rows": [
+                [
+                  "Vercel Inc.",
+                  "Website hosting and operation",
+                  "Processing runs in Frankfurt (Germany); company based in the United States"
+                ],
+                [
+                  "Neon Inc.",
+                  "Request database",
+                  "Frankfurt (Germany); company based in the United States"
+                ],
+                [
+                  "Cloudflare, Inc.",
+                  "Storage of attached documents (Cloudflare R2) and anti-bot check (Turnstile)",
+                  "Documents stored in the European Union; anti-bot check on Cloudflare's global network"
+                ],
+                [
+                  "Infomaniak Network SA",
+                  "Sending notification and acknowledgement emails",
+                  "Switzerland"
+                ],
+                [
+                  "Google Ireland Limited",
+                  "Traffic and advertising measurement, only with your consent",
+                  "European Union and United States"
+                ],
+                [
+                  "Meta Platforms Ireland Limited",
+                  "Advertising measurement, only with your consent",
+                  "European Union and United States"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "When your project is entrusted to a provider from our network (freelancer or agency), we only share the information needed to deliver it, under a confidentiality commitment. Aman & Partners remains your point of contact."
+            }
+          ]
+        },
+        "transfers": {
+          "title": "Transfers outside the European Union",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Some of our processors are based outside the European Union or may access data from there. These transfers are covered by the safeguards provided for by the GDPR: the European Commission's adequacy decision for Switzerland, the EU–US Data Privacy Framework for certified providers and, failing that, the standard contractual clauses adopted by the European Commission."
+            }
+          ]
+        },
+        "retention": {
+          "title": "Retention periods",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": ["Data", "Retention period"],
+              "rows": [
+                [
+                  "Messages, project requests and applications with no follow-up, with their internal notes and attached documents",
+                  "3 years from the last contact"
+                ],
+                [
+                  "Client data",
+                  "Duration of the contractual relationship, then statutory periods (7 years for accounting records)"
+                ],
+                ["Irreversible IP address fingerprints (submission limiting)", "24 hours at most"],
+                ["Your cookie choice", "6 months"],
+                ["Analytics and advertising cookies", "See the cookie policy"]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Once these periods have ended, the data is deleted or anonymised."
+            }
+          ]
+        },
+        "rights": {
+          "title": "Your rights",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Under the GDPR, you have the following rights over your data:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Right of access: to know what data we hold about you and obtain a copy.",
+                "Right to rectification: to have inaccurate or incomplete data corrected.",
+                "Right to erasure: to request the deletion of your data, unless we must keep it to comply with a legal obligation.",
+                "Right to restriction of processing: to request that the use of your data be temporarily suspended.",
+                "Right to object: to object to processing based on our legitimate interest.",
+                "Right to data portability: to receive the data you provided in a structured, commonly used format.",
+                "Right to withdraw your consent at any time, for analytics and advertising cookies, without affecting processing already carried out."
+              ]
+            },
+            {
+              "type": "p",
+              "text": "To exercise these rights, write to us at [À COMPLÉTER]. We will reply within one month. If we have reasonable doubts about your identity, we may ask you for additional information."
+            }
+          ]
+        },
+        "complaint": {
+          "title": "Complaints",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "If you believe that the processing of your data does not comply with the regulations, you can lodge a complaint with the Belgian Data Protection Authority: rue de la Presse 35, 1000 Brussels, www.dataprotectionauthority.be."
+            }
+          ]
+        },
+        "security": {
+          "title": "Security",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "We implement appropriate technical and organisational measures to protect your data, including:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "encrypted exchanges between your browser and the website (HTTPS);",
+                "access to requests restricted to Aman & Partners, protected by secure authentication;",
+                "attached documents that are never public, only accessible through temporary links;",
+                "protection against automated submissions, without storing IP addresses;",
+                "storage of requests and documents in the European Union."
+              ]
+            }
+          ]
+        },
+        "automatedDecisions": {
+          "title": "Automated decisions",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Your data is not subject to any fully automated decision or profiling producing legal effects concerning you. Every request is reviewed by a person."
+            }
+          ]
+        },
+        "changes": {
+          "title": "Changes",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "This policy may be updated, in particular if the website or the regulations change. The date of the last update is shown at the top of this page."
+            }
+          ]
+        }
+      }
+    },
+    "cookies": {
+      "eyebrow": "Legal",
+      "title": "Cookie policy",
+      "description": "The cookies used on the website, what they are for, how long they last, and how to change your choice at any time.",
+      "manageTitle": "Change my choice",
+      "manageText": "You can accept or refuse analytics and advertising cookies at any time.",
+      "sections": {
+        "definition": {
+          "title": "What is a cookie?",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A cookie is a small file placed on your device when you visit a website. It allows the website to remember information, such as your preferences, or to measure its traffic. This policy also covers similar technologies, such as the browser's local storage."
+            }
+          ]
+        },
+        "choice": {
+          "title": "Your choice",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "On your first visit, a banner lets you accept, refuse or customise cookies, just as easily. Only cookies necessary for the website to work are used without your consent."
+            },
+            {
+              "type": "p",
+              "text": "No analytics or advertising script (Google, Meta) is loaded before you give your consent. Your choice is kept for 6 months, after which the banner is shown again. You can change it at any time with the button at the bottom of this page, or the “Manage cookies” link in the footer of every page."
+            }
+          ]
+        },
+        "necessary": {
+          "title": "Necessary cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "These cookies are essential for the website to work securely. They do not require your consent."
+            },
+            {
+              "type": "table",
+              "headers": ["Name", "Provider", "Purpose", "Duration"],
+              "rows": [
+                ["ap_consent", "Aman & Partners", "Remembering your cookie choice", "6 months"],
+                [
+                  "Browser local storage",
+                  "Aman & Partners",
+                  "Remembering your display preference (light or dark theme)",
+                  "Until deleted in your browser"
+                ],
+                [
+                  "ap_admin_session",
+                  "Aman & Partners",
+                  "Sign-in session for the administration area, reserved for Aman & Partners; never set for visitors",
+                  "8 hours"
+                ],
+                [
+                  "[À VÉRIFIER] Cloudflare Turnstile technical cookies",
+                  "Cloudflare",
+                  "Checking that forms are sent by a person and not by a bot",
+                  "[À VÉRIFIER]"
+                ]
+              ]
+            }
+          ]
+        },
+        "analytics": {
+          "title": "Analytics cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "With your consent, these cookies help us understand how the website is used (pages viewed, journeys, devices), in order to improve it."
+            },
+            {
+              "type": "table",
+              "headers": ["Name", "Provider", "Purpose", "Duration"],
+              "rows": [
+                [
+                  "_ga",
+                  "Google (Google Analytics)",
+                  "Distinguishing visitors anonymously",
+                  "13 months"
+                ],
+                [
+                  "_ga_[identifier]",
+                  "Google (Google Analytics)",
+                  "Keeping the state of the current visit",
+                  "13 months"
+                ]
+              ]
+            }
+          ]
+        },
+        "advertising": {
+          "title": "Advertising cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "With your consent, these cookies allow us to measure the effectiveness of our advertising campaigns on Google, Facebook and Instagram, that is, to know how many requests each campaign brings us."
+            },
+            {
+              "type": "table",
+              "headers": ["Name", "Provider", "Purpose", "Duration"],
+              "rows": [
+                [
+                  "_gcl_au",
+                  "Google (Google Ads)",
+                  "Measuring conversions from our Google ads",
+                  "90 days"
+                ],
+                [
+                  "_fbp",
+                  "Meta (Facebook, Instagram)",
+                  "Measuring the effectiveness of our ads on Facebook and Instagram",
+                  "90 days"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Google and Meta may also set cookies on their own domains, under their own policies, which we invite you to read."
+            }
+          ]
+        },
+        "browser": {
+          "title": "Browser settings",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "You can also set your browser to block or delete cookies. Blocking necessary cookies may however prevent some features of the website from working, such as sending forms."
+            }
+          ]
+        },
+        "moreInfo": {
+          "title": "More information",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "To find out more about how your personal data is processed and about your rights, see our privacy policy."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -6,8 +6,14 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
   const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale;
 
+  // Textes du site et textes juridiques, rangés dans deux fichiers et fusionnés.
+  const [messages, legalMessages] = await Promise.all([
+    import(`../messages/${locale}.json`),
+    import(`../messages/legal/${locale}.json`),
+  ]);
+
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    messages: { ...messages.default, ...legalMessages.default },
   };
 });
