@@ -19,6 +19,16 @@ export const REQUEST_STATUSES = [
 export type RequestType = (typeof REQUEST_TYPES)[number];
 export type RequestStatus = (typeof REQUEST_STATUSES)[number];
 
+/**
+ * Statuts proposés selon le type de demande : suivi commercial pour les clients,
+ * acceptation ou refus pour les candidatures partenaires.
+ */
+export const STATUSES_BY_TYPE: Record<RequestType, readonly RequestStatus[]> = {
+  contact: ["new", "in_progress", "quote_sent", "won", "lost", "archived"],
+  project: ["new", "in_progress", "quote_sent", "won", "lost", "archived"],
+  partner: ["new", "in_progress", "accepted", "declined", "archived"],
+};
+
 export const requestTypeEnum = pgEnum("request_type", REQUEST_TYPES);
 export const requestStatusEnum = pgEnum("request_status", REQUEST_STATUSES);
 
@@ -64,6 +74,21 @@ export const requests = pgTable(
   ],
 );
 
+/** Notes internes d'une demande, visibles uniquement dans le dashboard. */
+export const requestNotes = pgTable(
+  "request_notes",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    /** Demande concernée. Si la demande est supprimée, ses notes le sont aussi. */
+    requestId: uuid("request_id")
+      .notNull()
+      .references(() => requests.id, { onDelete: "cascade" }),
+    body: text("body").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [index("request_notes_request_id_idx").on(table.requestId)],
+);
+
 /** Compteurs de la limitation des envois : une ligne par visiteur et par formulaire. */
 export const rateLimits = pgTable("rate_limits", {
   /** Formulaire et empreinte irréversible de l'adresse IP, jamais l'adresse elle-même. */
@@ -77,3 +102,6 @@ export type RequestRecord = typeof requests.$inferSelect;
 
 /** Une demande telle qu'on l'enregistre. */
 export type NewRequestRecord = typeof requests.$inferInsert;
+
+/** Une note interne telle qu'elle est lue dans la base. */
+export type RequestNote = typeof requestNotes.$inferSelect;

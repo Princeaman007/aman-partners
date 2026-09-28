@@ -1,10 +1,13 @@
 import "server-only";
-import { and, count, desc, eq, ilike, ne, or, type SQL } from "drizzle-orm";
+import { and, asc, count, desc, eq, ilike, ne, or, type SQL } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import {
   REQUEST_STATUSES,
   REQUEST_TYPES,
+  requestNotes,
   requests,
+  type RequestNote,
+  type RequestRecord,
   type RequestStatus,
   type RequestType,
 } from "@/lib/db/schema";
@@ -44,6 +47,13 @@ const LIST_COLUMNS = {
   company: requests.company,
   createdAt: requests.createdAt,
 };
+
+const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** Indique si une valeur est un identifiant de demande valide (UUID). */
+export function isRequestId(value: unknown): value is string {
+  return typeof value === "string" && UUID_PATTERN.test(value);
+}
 
 /** Crée un compteur à zéro pour chaque clé de la liste. */
 function zeroCounts<Key extends string>(keys: readonly Key[]): Record<Key, number> {
@@ -137,4 +147,23 @@ export async function getRequestCounters(): Promise<RequestCounters> {
   }
 
   return { byStatus, byType, totalActive };
+}
+
+/** Une demande complète, ou null si l'identifiant est invalide ou inconnu. */
+export async function getRequestById(id: string): Promise<RequestRecord | null> {
+  if (!isRequestId(id)) {
+    return null;
+  }
+
+  const [record] = await getDb().select().from(requests).where(eq(requests.id, id)).limit(1);
+  return record ?? null;
+}
+
+/** Notes internes d'une demande, de la plus ancienne à la plus récente. */
+export async function listRequestNotes(requestId: string): Promise<RequestNote[]> {
+  return getDb()
+    .select()
+    .from(requestNotes)
+    .where(eq(requestNotes.requestId, requestId))
+    .orderBy(asc(requestNotes.createdAt));
 }

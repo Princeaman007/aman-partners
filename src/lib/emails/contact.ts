@@ -5,12 +5,14 @@ import type { EmailMessage } from "@/lib/services/email";
 import type { ContactData } from "@/lib/validation/contact";
 import {
   EMAIL_COLORS,
+  htmlButton,
   htmlDetails,
   htmlParagraph,
   renderEmailLayout,
   textDetails,
   type EmailDetail,
 } from "./layout";
+import { adminRequestUrl } from "./links";
 import { describeSource } from "./tracking";
 
 /** Accusé de réception envoyé au visiteur, dans la langue du site au moment de l'envoi. */
@@ -52,7 +54,7 @@ type NotificationParams = {
   to: string;
 };
 
-/** Notification envoyée à Aman & Partners, toujours en français. */
+/** Notification envoyée à Aman & Partners, toujours en français, avec le lien vers la fiche. */
 export async function buildContactNotification({
   data,
   requestId,
@@ -63,6 +65,8 @@ export async function buildContactNotification({
   const tLanguages = await getTranslations({ locale: "fr", namespace: "LanguageSwitcher" });
 
   const notProvided = t("notProvided");
+  const dashboardUrl = adminRequestUrl(requestId);
+  const openLabel = t("openInDashboard");
 
   const details: EmailDetail[] = [
     { label: t("contactNotification.name"), value: data.name },
@@ -83,6 +87,7 @@ export async function buildContactNotification({
 
   const content = [
     htmlParagraph(intro),
+    htmlButton(dashboardUrl, openLabel),
     htmlDetails(details),
     htmlParagraph(messageLabel, EMAIL_COLORS.muted),
     `<blockquote style="margin:0 0 24px;padding:12px 16px;border-left:2px solid ${EMAIL_COLORS.text};">${htmlParagraph(data.message)}</blockquote>`,
@@ -93,9 +98,18 @@ export async function buildContactNotification({
     to,
     replyTo: data.email,
     subject: t("contactNotification.subject", { name: data.name }),
-    text: [intro, "", textDetails(details), "", `${messageLabel} :`, data.message, "", reply].join(
-      "\n",
-    ),
+    text: [
+      intro,
+      "",
+      `${openLabel} : ${dashboardUrl}`,
+      "",
+      textDetails(details),
+      "",
+      `${messageLabel} :`,
+      data.message,
+      "",
+      reply,
+    ].join("\n"),
     html: renderEmailLayout({ preview: intro, content }),
   };
 }

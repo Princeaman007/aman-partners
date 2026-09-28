@@ -5,12 +5,14 @@ import type { EmailAttachment, EmailMessage } from "@/lib/services/email";
 import type { ProjectRequestData } from "@/lib/validation/project-request";
 import {
   EMAIL_COLORS,
+  htmlButton,
   htmlDetails,
   htmlParagraph,
   renderEmailLayout,
   textDetails,
   type EmailDetail,
 } from "./layout";
+import { adminRequestUrl } from "./links";
 import { describeSource } from "./tracking";
 
 /** Nom complet du demandeur. */
@@ -109,7 +111,7 @@ type NotificationParams = {
   attachment: EmailAttachment | null;
 };
 
-/** Notification envoyée à Aman & Partners, toujours en français, avec la pièce jointe. */
+/** Notification envoyée à Aman & Partners, en français, avec la pièce jointe et le lien vers la fiche. */
 export async function buildProjectNotification({
   data,
   requestId,
@@ -123,6 +125,8 @@ export async function buildProjectNotification({
 
   const name = fullName(data);
   const notProvided = t("notProvided");
+  const dashboardUrl = adminRequestUrl(requestId);
+  const openLabel = t("openInDashboard");
 
   const details: EmailDetail[] = [
     { label: t("projectNotification.name"), value: name },
@@ -155,6 +159,7 @@ export async function buildProjectNotification({
 
   const content = [
     htmlParagraph(intro),
+    htmlButton(dashboardUrl, openLabel),
     htmlDetails(details),
     htmlParagraph(descriptionLabel, EMAIL_COLORS.muted),
     descriptionBlock(data.description),
@@ -167,6 +172,8 @@ export async function buildProjectNotification({
     subject: t("projectNotification.subject", { name, projectType: choices.projectType }),
     text: [
       intro,
+      "",
+      `${openLabel} : ${dashboardUrl}`,
       "",
       textDetails(details),
       "",

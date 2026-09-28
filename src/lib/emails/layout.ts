@@ -24,6 +24,11 @@ export function htmlParagraph(text: string, color: string = COLORS.text): string
   return `<p style="margin:0 0 16px;font-family:${FONT};font-size:15px;line-height:1.6;color:${color};">${safe}</p>`;
 }
 
+/** Bouton d'action (lien mis en forme), adresse et libellé protégés. */
+export function htmlButton(href: string, label: string): string {
+  return `<p style="margin:8px 0 24px;"><a href="${escapeHtml(href)}" style="display:inline-block;padding:12px 20px;border-radius:6px;background:${COLORS.text};color:${COLORS.background};font-family:${FONT};font-size:14px;font-weight:600;text-decoration:none;">${escapeHtml(label)}</a></p>`;
+}
+
 /** Tableau d'informations (libellé, valeur), toutes les valeurs protégées. */
 export function htmlDetails(details: EmailDetail[]): string {
   const rows = details

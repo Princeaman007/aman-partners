@@ -5,12 +5,14 @@ import type { EmailMessage } from "@/lib/services/email";
 import type { PartnerApplicationData } from "@/lib/validation/partner-application";
 import {
   EMAIL_COLORS,
+  htmlButton,
   htmlDetails,
   htmlParagraph,
   renderEmailLayout,
   textDetails,
   type EmailDetail,
 } from "./layout";
+import { adminRequestUrl } from "./links";
 
 /** Libellés traduits du profil (statut, disponibilité, spécialités, expérience). */
 async function describeProfile(data: PartnerApplicationData, locale: AppLocale) {
@@ -95,7 +97,7 @@ type NotificationParams = {
   to: string;
 };
 
-/** Notification envoyée à Aman & Partners, toujours en français. */
+/** Notification envoyée à Aman & Partners, toujours en français, avec le lien vers la fiche. */
 export async function buildPartnerNotification({
   data,
   requestId,
@@ -106,6 +108,8 @@ export async function buildPartnerNotification({
   const tLanguages = await getTranslations({ locale: "fr", namespace: "LanguageSwitcher" });
 
   const notProvided = t("notProvided");
+  const dashboardUrl = adminRequestUrl(requestId);
+  const openLabel = t("openInDashboard");
 
   const details: EmailDetail[] = [
     { label: t("partnerNotification.name"), value: data.name },
@@ -127,6 +131,7 @@ export async function buildPartnerNotification({
 
   const content = [
     htmlParagraph(intro),
+    htmlButton(dashboardUrl, openLabel),
     htmlDetails(details),
     htmlParagraph(messageLabel, EMAIL_COLORS.muted),
     `<blockquote style="margin:0 0 24px;padding:12px 16px;border-left:2px solid ${EMAIL_COLORS.text};">${htmlParagraph(message)}</blockquote>`,
@@ -137,7 +142,18 @@ export async function buildPartnerNotification({
     to,
     replyTo: data.email,
     subject: t("partnerNotification.subject", { name: data.name }),
-    text: [intro, "", textDetails(details), "", `${messageLabel} :`, message, "", reply].join("\n"),
+    text: [
+      intro,
+      "",
+      `${openLabel} : ${dashboardUrl}`,
+      "",
+      textDetails(details),
+      "",
+      `${messageLabel} :`,
+      message,
+      "",
+      reply,
+    ].join("\n"),
     html: renderEmailLayout({ preview: intro, content }),
   };
 }
