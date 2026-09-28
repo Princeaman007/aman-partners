@@ -16,6 +16,16 @@ export function gtag(...args: unknown[]): void {
   window.gtag?.(...args);
 }
 
+/** GA4 a été configuré dans cette page (accord « mesure d'audience » donné au moins une fois). */
+export function isGoogleAnalyticsConfigured(): boolean {
+  return analyticsConfigured;
+}
+
+/** Google Ads a été configuré dans cette page (accord « publicité » donné au moins une fois). */
+export function isGoogleAdsConfigured(): boolean {
+  return adsConfigured;
+}
+
 /**
  * Prépare la balise Google : file d'attente, et Consent Mode v2 avec les quatre signaux
  * refusés par défaut. Aucune requête n'est envoyée à ce stade.

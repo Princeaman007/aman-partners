@@ -14,6 +14,7 @@ import {
 } from "@/lib/forms/server";
 import { getClientIp } from "@/lib/services/client-ip";
 import { getNotificationRecipient, sendEmail, type EmailAttachment } from "@/lib/services/email";
+import { resolveEventId, sendMetaConversion } from "@/lib/services/meta-capi";
 import { checkRateLimit } from "@/lib/services/rate-limit";
 import { inspectAttachment, uploadAttachment } from "@/lib/services/storage";
 import { verifyTurnstileToken } from "@/lib/services/turnstile";
@@ -62,7 +63,7 @@ export async function POST(request: Request) {
     }
 
     // 4. Validation des champs avec le même schéma que le navigateur.
-    const payload: Record<string, unknown> = {
+    const payload: { [key: string]: unknown } = {
       consent: readFormText(formData, "consent") === "true",
       tracking: readFormJson(formData, "tracking"),
     };
@@ -133,7 +134,7 @@ export async function POST(request: Request) {
       throw new Error("La demande n'a pas pu être enregistrée.");
     }
 
-    // 8. Envoi des deux e-mails. Un échec n'annule pas la demande, déjà enregistrée.
+    // 8. E-mails et conversion Meta (serveur), en parallèle. Un échec n'annule pas la demande.
     const results = await Promise.allSettled([
       buildProjectNotification({
         data,
@@ -143,11 +144,23 @@ export async function POST(request: Request) {
         attachment: emailAttachment,
       }).then(sendEmail),
       buildProjectAcknowledgment(data, locale, storedAttachment?.name ?? null).then(sendEmail),
+      sendMetaConversion(request, {
+        eventName: "Lead",
+        eventId: resolveEventId(readFormText(formData, "eventId")),
+        email: data.email,
+        phone: data.phone,
+        firstName: data.firstName,
+        lastName: data.lastName,
+        tracking: data.tracking,
+      }),
     ]);
 
     for (const result of results) {
       if (result.status === "rejected") {
-        console.error("[project-request] Envoi d'un e-mail échoué :", result.reason);
+        console.error(
+          "[project-request] Envoi d'un e-mail ou de la conversion Meta échoué :",
+          result.reason,
+        );
       }
     }
 

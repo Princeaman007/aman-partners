@@ -17,6 +17,8 @@ import {
   type FormAlertKind,
   type FormApiResponse,
 } from "@/lib/forms/responses";
+import { getAttribution } from "@/lib/tracking/attribution";
+import { createEventId, trackConversion } from "@/lib/tracking/conversions";
 import { contactSchema, type ContactData, type ContactInput } from "@/lib/validation/contact";
 import { FormAlert } from "./FormAlert";
 import { HoneypotField } from "./HoneypotField";
@@ -92,12 +94,21 @@ export function ContactForm() {
       return;
     }
 
+    // Identifiant commun à la conversion du navigateur et à celle du serveur (Conversions API).
+    const eventId = createEventId();
+
     let result: FormApiResponse;
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale, turnstileToken }),
+        body: JSON.stringify({
+          ...data,
+          tracking: getAttribution(),
+          eventId,
+          locale,
+          turnstileToken,
+        }),
       });
       result = (await response.json()) as FormApiResponse;
     } catch {
@@ -109,6 +120,8 @@ export function ContactForm() {
     resetTurnstile();
 
     if (result.ok) {
+      // Conversion secondaire, signalée seulement après un envoi réussi.
+      trackConversion("contactMessage", eventId);
       reset(DEFAULT_VALUES);
       setIsSent(true);
       return;

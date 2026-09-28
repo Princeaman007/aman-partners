@@ -18,6 +18,11 @@ export function fbq(...args: unknown[]): void {
   window.fbq?.(...args);
 }
 
+/** Le Pixel est initialisé et l'accord publicitaire est actuellement donné. */
+export function isMetaPixelActive(): boolean {
+  return initialized && granted;
+}
+
 /**
  * Crée la file d'attente du Pixel, telle que le script de Meta l'attend :
  * les commandes y patientent jusqu'à l'arrivée du script, qui les exécute ensuite.

@@ -11,6 +11,7 @@ import {
 } from "@/lib/forms/server";
 import { getClientIp } from "@/lib/services/client-ip";
 import { getNotificationRecipient, sendEmail } from "@/lib/services/email";
+import { resolveEventId, sendMetaConversion } from "@/lib/services/meta-capi";
 import { checkRateLimit } from "@/lib/services/rate-limit";
 import { verifyTurnstileToken } from "@/lib/services/turnstile";
 import { contactSchema } from "@/lib/validation/contact";
@@ -24,8 +25,8 @@ export async function POST(request: Request) {
     body = {};
   }
 
-  const payload: Record<string, unknown> =
-    typeof body === "object" && body !== null ? (body as Record<string, unknown>) : {};
+  const payload: { [key: string]: unknown } =
+    typeof body === "object" && body !== null ? (body as { [key: string]: unknown }) : {};
   const locale = parseLocale(payload.locale);
 
   // 1. Champ piège rempli : c'est un robot. On répond « merci » sans rien enregistrer ni envoyer.
@@ -78,7 +79,7 @@ export async function POST(request: Request) {
       throw new Error("La demande n'a pas pu être enregistrée.");
     }
 
-    // 6. Envoi des deux e-mails. Un échec n'annule pas la demande, déjà enregistrée.
+    // 6. E-mails et conversion Meta (serveur), en parallèle. Un échec n'annule pas la demande.
     const results = await Promise.allSettled([
       buildContactNotification({
         data,
@@ -87,11 +88,21 @@ export async function POST(request: Request) {
         to: getNotificationRecipient(),
       }).then(sendEmail),
       buildContactAcknowledgment(data, locale).then(sendEmail),
+      sendMetaConversion(request, {
+        eventName: "Contact",
+        eventId: resolveEventId(payload.eventId),
+        email: data.email,
+        phone: data.phone,
+        tracking: data.tracking,
+      }),
     ]);
 
     for (const result of results) {
       if (result.status === "rejected") {
-        console.error("[contact] Envoi d'un e-mail échoué :", result.reason);
+        console.error(
+          "[contact] Envoi d'un e-mail ou de la conversion Meta échoué :",
+          result.reason,
+        );
       }
     }
 

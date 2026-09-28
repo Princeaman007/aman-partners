@@ -19,6 +19,8 @@ import {
   type FormAlertKind,
   type FormApiResponse,
 } from "@/lib/forms/responses";
+import { getAttribution } from "@/lib/tracking/attribution";
+import { createEventId, trackConversion } from "@/lib/tracking/conversions";
 import {
   BUDGET_RANGES,
   PROJECT_TYPES,
@@ -80,7 +82,7 @@ type YesNoFieldProps = {
   legend: string;
   error?: string;
   registration: UseFormRegisterReturn;
-  labels: Record<(typeof YES_NO)[number], string>;
+  labels: { [key in (typeof YES_NO)[number]]: string };
 };
 
 /**
@@ -225,6 +227,10 @@ export function ProjectRequestForm() {
       return;
     }
 
+    // Identifiant commun à la conversion du navigateur et à celle du serveur (Conversions API).
+    const eventId = createEventId();
+    const tracking = getAttribution();
+
     const formData = new FormData();
     formData.set("lastName", data.lastName);
     formData.set("firstName", data.firstName);
@@ -242,6 +248,10 @@ export function ProjectRequestForm() {
     formData.set("website", data.website ?? "");
     formData.set("locale", locale);
     formData.set("turnstileToken", turnstileToken);
+    formData.set("eventId", eventId);
+    if (tracking) {
+      formData.set("tracking", JSON.stringify(tracking));
+    }
     if (attachment) {
       formData.set("attachment", attachment);
     }
@@ -259,6 +269,8 @@ export function ProjectRequestForm() {
     resetTurnstile();
 
     if (result.ok) {
+      // Conversion principale, signalée seulement après un envoi réussi.
+      trackConversion("projectRequest", eventId);
       setIsSent(true);
       return;
     }

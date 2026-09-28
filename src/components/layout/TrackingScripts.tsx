@@ -3,12 +3,13 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { useConsent } from "@/lib/consent/client";
+import { captureAttribution, syncAttributionConsent } from "@/lib/tracking/attribution";
 import { applyGoogleConsent } from "@/lib/tracking/google";
 import { applyMetaConsent, trackMetaPageView } from "@/lib/tracking/meta";
 
 /**
- * Pilote la balise Google et le Meta Pixel selon le choix du visiteur dans la bannière de cookies.
- * Invisible : il ne rend rien, et ne charge rien tant qu'aucun accord n'est donné.
+ * Pilote la balise Google, le Meta Pixel et la conservation des paramètres de campagne
+ * selon le choix du visiteur. Invisible : il ne rend rien, et ne charge rien sans accord.
  */
 export function TrackingScripts() {
   const consent = useConsent();
@@ -23,10 +24,13 @@ export function TrackingScripts() {
     }
     applyGoogleConsent(consent);
     applyMetaConsent(consent);
+    syncAttributionConsent(consent?.advertising === true);
   }, [consent]);
 
-  // Changement de page sans rechargement : GA4 le détecte seul, le Meta Pixel doit être prévenu.
+  // À chaque page : lecture des paramètres de campagne de l'adresse, et page vue pour le Pixel.
   useEffect(() => {
+    captureAttribution();
+
     if (previousPathname.current !== null && previousPathname.current !== pathname) {
       trackMetaPageView();
     }

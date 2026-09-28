@@ -1,9 +1,9 @@
-import ExternalLink from "next/link";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { PRIMARY_CTA_HREF } from "@/components/layout/navigation";
 import { PageHeader } from "@/components/sections/PageHeader";
+import { BookCallLink } from "@/components/tracking/BookCallLink";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { Container } from "@/components/ui/Container";
 import { COMPANY, isPlaceholder, toPhoneHref } from "@/content/company";
@@ -14,6 +14,9 @@ type ContactPageProps = {
 
 const LINK_CLASSES =
   "rounded-sm font-medium text-foreground underline decoration-border underline-offset-4 transition-colors duration-150 hover:decoration-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground";
+
+const BOOKING_LINK_CLASSES =
+  "group inline-flex items-center gap-2 rounded-sm text-sm font-semibold text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground";
 
 export default async function ContactPage({ params }: ContactPageProps) {
   const { locale } = await params;
@@ -84,13 +87,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{t("bookingText")}</p>
                 <p className="mt-5">
-                  <ExternalLink
-                    href={bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    prefetch={false}
-                    className="group inline-flex items-center gap-2 rounded-sm text-sm font-semibold text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
-                  >
+                  <BookCallLink href={bookingUrl} className={BOOKING_LINK_CLASSES}>
                     {t("bookingCta")}
                     <ArrowUpRight
                       aria-hidden="true"
@@ -98,7 +95,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                       className="size-4 shrink-0 transition-transform duration-150 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transition-none"
                     />
                     <span className="sr-only">{t("newTab")}</span>
-                  </ExternalLink>
+                  </BookCallLink>
                 </p>
               </section>
             ) : null}
