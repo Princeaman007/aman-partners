@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/SkipLink";
 import { ThemeScript } from "@/components/layout/ThemeScript";
+import { TrackingScripts } from "@/components/layout/TrackingScripts";
 import { routing } from "@/i18n/routing";
 import { instrumentSerif, manrope } from "../fonts";
 import "../globals.css";
@@ -61,6 +62,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             {children}
           </main>
           <Footer />
+          <TrackingScripts />
         </NextIntlClientProvider>
       </body>
     </html>
