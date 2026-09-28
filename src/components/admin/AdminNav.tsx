@@ -11,11 +11,9 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { ADMIN_REQUESTS_PATH } from "@/lib/admin/request-filters";
 import type { RequestType } from "@/lib/db/schema";
 import { cn } from "@/lib/utils";
-
-/** Adresse de la liste des demandes (créée à l'étape D.3). */
-export const ADMIN_REQUESTS_PATH = "/admin/demandes";
 
 type NavItem = {
   key: "overview" | "requests" | "projects" | "contacts" | "partners";

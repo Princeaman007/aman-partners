@@ -613,7 +613,59 @@
     },
     "home": {
       "title": "Vue d'ensemble",
-      "text": "Retrouvez ici toutes les demandes reçues par le site. Les compteurs et la liste des demandes arrivent à l'étape suivante."
+      "description": "Les demandes reçues par le site, et celles qui attendent une réponse.",
+      "countersLabel": "Chiffres clés",
+      "newRequests": "Nouvelles demandes",
+      "newRequestsHint": "À traiter en priorité",
+      "inProgress": "En cours",
+      "quotesSent": "Devis envoyés",
+      "total": "Total, hors archivées",
+      "byType": "Répartition par type",
+      "latest": "Dernières demandes",
+      "viewNew": "Voir les nouvelles demandes",
+      "viewAll": "Voir toutes les demandes",
+      "empty": "Aucune demande reçue pour l'instant. Elles apparaîtront ici dès qu'un visiteur remplira un formulaire du site."
+    },
+    "requests": {
+      "title": "Demandes",
+      "description": "Toutes les demandes reçues par le site, de la plus récente à la plus ancienne.",
+      "filtersLabel": "Filtrer les demandes",
+      "search": "Rechercher",
+      "searchPlaceholder": "Nom, e-mail ou entreprise",
+      "type": "Type",
+      "status": "Statut",
+      "allTypes": "Tous les types",
+      "allStatuses": "Tous, hors archivées",
+      "apply": "Filtrer",
+      "reset": "Réinitialiser",
+      "resultCount": "{count, plural, =0 {Aucune demande} one {# demande} other {# demandes}}",
+      "empty": "Aucune demande ne correspond à ces critères.",
+      "emptyAll": "Aucune demande reçue pour l'instant. Elles apparaîtront ici dès qu'un visiteur remplira un formulaire du site.",
+      "columns": {
+        "requester": "Demandeur",
+        "type": "Type",
+        "status": "Statut",
+        "receivedAt": "Reçue le"
+      },
+      "pagination": "Pagination",
+      "previous": "Précédente",
+      "next": "Suivante",
+      "pageOf": "Page {page} sur {total}"
+    },
+    "types": {
+      "contact": "Message",
+      "project": "Demande de projet",
+      "partner": "Candidature"
+    },
+    "statuses": {
+      "new": "Nouvelle",
+      "in_progress": "En cours",
+      "quote_sent": "Devis envoyé",
+      "won": "Gagnée",
+      "lost": "Perdue",
+      "accepted": "Acceptée",
+      "declined": "Refusée",
+      "archived": "Archivée"
     }
   },
   "FileUpload": {

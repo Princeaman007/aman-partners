@@ -613,7 +613,59 @@
     },
     "home": {
       "title": "Overview",
-      "text": "All the requests received by the website are gathered here. The counters and the list of requests arrive in the next step."
+      "description": "The requests received by the website, and those awaiting an answer.",
+      "countersLabel": "Key figures",
+      "newRequests": "New requests",
+      "newRequestsHint": "To handle first",
+      "inProgress": "In progress",
+      "quotesSent": "Quotes sent",
+      "total": "Total, excluding archived",
+      "byType": "Breakdown by type",
+      "latest": "Latest requests",
+      "viewNew": "View new requests",
+      "viewAll": "View all requests",
+      "empty": "No requests received yet. They will appear here as soon as a visitor fills in a website form."
+    },
+    "requests": {
+      "title": "Requests",
+      "description": "All the requests received by the website, from newest to oldest.",
+      "filtersLabel": "Filter requests",
+      "search": "Search",
+      "searchPlaceholder": "Name, email or company",
+      "type": "Type",
+      "status": "Status",
+      "allTypes": "All types",
+      "allStatuses": "All, excluding archived",
+      "apply": "Filter",
+      "reset": "Reset",
+      "resultCount": "{count, plural, =0 {No requests} one {# request} other {# requests}}",
+      "empty": "No requests match these criteria.",
+      "emptyAll": "No requests received yet. They will appear here as soon as a visitor fills in a website form.",
+      "columns": {
+        "requester": "Requester",
+        "type": "Type",
+        "status": "Status",
+        "receivedAt": "Received"
+      },
+      "pagination": "Pagination",
+      "previous": "Previous",
+      "next": "Next",
+      "pageOf": "Page {page} of {total}"
+    },
+    "types": {
+      "contact": "Message",
+      "project": "Project request",
+      "partner": "Application"
+    },
+    "statuses": {
+      "new": "New",
+      "in_progress": "In progress",
+      "quote_sent": "Quote sent",
+      "won": "Won",
+      "lost": "Lost",
+      "accepted": "Accepted",
+      "declined": "Declined",
+      "archived": "Archived"
     }
   },
   "FileUpload": {
