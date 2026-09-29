@@ -2,6 +2,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ServiceList } from "@/components/sections/ServiceList";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("services", "/services");
 
 type ServicesPageProps = {
   params: Promise<{ locale: string }>;

@@ -3,6 +3,9 @@ import { AboutPositioning } from "@/components/sections/AboutPositioning";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Founder } from "@/components/sections/Founder";
 import { PageHeader } from "@/components/sections/PageHeader";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("about", "/a-propos");
 
 type AboutPageProps = {
   params: Promise<{ locale: string }>;

@@ -3,6 +3,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProjectRequestForm } from "@/components/forms/ProjectRequestForm";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { Container } from "@/components/ui/Container";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("projectRequest", "/demande-de-projet");
 
 type ProjectRequestPageProps = {
   params: Promise<{ locale: string }>;

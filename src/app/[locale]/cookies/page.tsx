@@ -1,19 +1,14 @@
-import type { Metadata } from "next";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { CookieSettingsButton } from "@/components/layout/CookieSettingsButton";
 import { LegalDocument } from "@/components/legal/LegalDocument";
 import { getLegalSections } from "@/lib/legal/document";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("cookies", "/cookies");
 
 type CookiesPageProps = {
   params: Promise<{ locale: string }>;
 };
-
-export async function generateMetadata({ params }: CookiesPageProps): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Legal.cookies" });
-
-  return { title: t("title"), description: t("description") };
-}
 
 /** Politique de cookies, avec un bouton pour modifier son choix à tout moment. */
 export default async function CookiesPage({ params }: CookiesPageProps) {

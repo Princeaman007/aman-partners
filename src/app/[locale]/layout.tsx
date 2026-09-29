@@ -10,6 +10,7 @@ import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/SkipLink";
 import { ThemeScript } from "@/components/layout/ThemeScript";
 import { TrackingScripts } from "@/components/layout/TrackingScripts";
 import { routing } from "@/i18n/routing";
+import { getSiteUrl, openGraphLocale } from "@/lib/seo/metadata";
 import { instrumentSerif, manrope } from "../fonts";
 import "../globals.css";
 
@@ -25,13 +26,34 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+/** Métadonnées communes à toutes les pages ; chaque page complète son titre et sa description. */
 export async function generateMetadata({ params }: LocaleParams): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+  const appLocale = hasLocale(routing.locales, locale) ? locale : routing.defaultLocale;
+  const t = await getTranslations({ locale: appLocale, namespace: "Metadata" });
+  const siteName = t("title");
 
   return {
-    title: t("title"),
+    metadataBase: getSiteUrl(),
+    title: {
+      default: siteName,
+      // « Services » devient « Services | Aman & Partners ».
+      template: `%s | ${siteName}`,
+    },
     description: t("description"),
+    applicationName: siteName,
+    openGraph: {
+      type: "website",
+      siteName,
+      locale: openGraphLocale(appLocale),
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+    // Vérification Google Search Console (étape 7.4), si le code est renseigné.
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    },
   };
 }
 

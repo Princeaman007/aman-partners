@@ -3,6 +3,9 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ProjectCaseStudies } from "@/components/sections/ProjectCaseStudies";
 import { Container } from "@/components/ui/Container";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("work", "/realisations");
 
 type WorkPageProps = {
   params: Promise<{ locale: string }>;

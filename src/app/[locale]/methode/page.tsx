@@ -3,6 +3,9 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { TimelineSteps } from "@/components/sections/Timeline";
 import { Container } from "@/components/ui/Container";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("method", "/methode");
 
 type MethodPageProps = {
   params: Promise<{ locale: string }>;

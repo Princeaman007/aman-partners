@@ -3,6 +3,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PartnerForm } from "@/components/forms/PartnerForm";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { Container } from "@/components/ui/Container";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("partners", "/partenaires");
 
 type PartnersPageProps = {
   params: Promise<{ locale: string }>;

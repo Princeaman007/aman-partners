@@ -1,0 +1,48 @@
+{
+  "Seo": {
+    "home": {
+      "title": "Aman & Partners | Agence digitale en Belgique",
+      "description": "Sites web, applications mobiles, logiciels sur mesure et automatisation : nous réalisons ou sélectionnons les bons experts, et pilotons votre projet."
+    },
+    "services": {
+      "title": "Services : web, mobile, SaaS et automatisation",
+      "description": "Sites vitrines, e-commerce, applications web et mobiles, logiciels métiers, SaaS, automatisation et maintenance, avec un seul interlocuteur."
+    },
+    "method": {
+      "title": "Notre méthode : de votre besoin à la livraison",
+      "description": "Cinq étapes claires : analyse de votre besoin, proposition, réalisation par nos soins ou par des experts sélectionnés, pilotage et livraison."
+    },
+    "work": {
+      "title": "Réalisations : plateformes web en production",
+      "description": "Des plateformes conçues et développées par le fondateur d'Aman & Partners, dont ShopEasy CI, une plateforme SaaS e-commerce en production."
+    },
+    "about": {
+      "title": "À propos : un fondateur développeur, un réseau d'experts",
+      "description": "Aman & Partners réunit vision business, expertise technique et réseau de freelances et d'agences pour mener vos projets digitaux, depuis la Belgique."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Une question ou un projet digital ? Écrivez à Aman & Partners : nous revenons vers vous rapidement."
+    },
+    "projectRequest": {
+      "title": "Demande de projet : présentez-nous votre besoin",
+      "description": "Décrivez votre projet digital en quelques minutes : nous l'analysons et vous adressons une proposition claire et adaptée à votre besoin."
+    },
+    "partners": {
+      "title": "Partenaires : rejoignez notre réseau d'experts",
+      "description": "Développeur, freelance ou agence ? Rejoignez le réseau d'Aman & Partners et recevez des missions adaptées à vos spécialités."
+    },
+    "legalNotice": {
+      "title": "Mentions légales",
+      "description": "Les informations sur l'éditeur du site Aman & Partners, son hébergement et les conditions d'utilisation de son contenu."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Les données collectées par le site Aman & Partners, leur utilisation, leur durée de conservation et vos droits."
+    },
+    "cookies": {
+      "title": "Politique de cookies",
+      "description": "Les cookies utilisés sur le site Aman & Partners, leur utilité, leur durée, et comment modifier votre choix à tout moment."
+    }
+  }
+}

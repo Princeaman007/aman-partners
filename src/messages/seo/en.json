@@ -1,0 +1,48 @@
+{
+  "Seo": {
+    "home": {
+      "title": "Aman & Partners | Digital agency in Belgium",
+      "description": "Websites, mobile apps, custom software and automation: we build your project or select the right experts, and manage it for you."
+    },
+    "services": {
+      "title": "Services: web, mobile, SaaS and automation",
+      "description": "Company websites, e-commerce, web and mobile apps, business software, SaaS, automation and maintenance, with one point of contact."
+    },
+    "method": {
+      "title": "Our process: from your needs to delivery",
+      "description": "Five clear steps: needs analysis, proposal, delivery by our team or by selected experts, project management and handover."
+    },
+    "work": {
+      "title": "Work: web platforms in production",
+      "description": "Platforms designed and built by the founder of Aman & Partners, including ShopEasy CI, a live e-commerce SaaS platform."
+    },
+    "about": {
+      "title": "About: a developer founder, a network of experts",
+      "description": "Aman & Partners brings together business vision, technical expertise and a network of freelancers and agencies to deliver your digital projects."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "A question or a digital project? Write to Aman & Partners: we'll get back to you shortly."
+    },
+    "projectRequest": {
+      "title": "Start a project: tell us what you need",
+      "description": "Describe your digital project in a few minutes: we review it and send you a clear proposal tailored to your needs."
+    },
+    "partners": {
+      "title": "Partners: join our network of experts",
+      "description": "Developer, freelancer or agency? Join the Aman & Partners network and receive assignments that match your specialties."
+    },
+    "legalNotice": {
+      "title": "Legal notice",
+      "description": "Information about the publisher of the Aman & Partners website, its hosting and the terms of use of its content."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "The data collected by the Aman & Partners website, how it is used, how long it is kept and your rights."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "description": "The cookies used on the Aman & Partners website, what they are for, how long they last, and how to change your choice."
+    }
+  }
+}

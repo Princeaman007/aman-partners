@@ -7,6 +7,9 @@ import { Problems } from "@/components/sections/Problems";
 import { Projects } from "@/components/sections/Projects";
 import { Services } from "@/components/sections/Services";
 import { Timeline } from "@/components/sections/Timeline";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("home", "/");
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;

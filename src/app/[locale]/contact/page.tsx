@@ -7,6 +7,9 @@ import { BookCallLink } from "@/components/tracking/BookCallLink";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { Container } from "@/components/ui/Container";
 import { COMPANY, isPlaceholder, toPhoneHref } from "@/content/company";
+import { createPageMetadata } from "@/lib/seo/metadata";
+
+export const generateMetadata = createPageMetadata("contact", "/contact");
 
 type ContactPageProps = {
   params: Promise<{ locale: string }>;
