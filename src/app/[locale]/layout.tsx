@@ -9,8 +9,10 @@ import { Header } from "@/components/layout/Header";
 import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/SkipLink";
 import { ThemeScript } from "@/components/layout/ThemeScript";
 import { TrackingScripts } from "@/components/layout/TrackingScripts";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { routing } from "@/i18n/routing";
 import { getSiteUrl, openGraphLocale } from "@/lib/seo/metadata";
+import { buildSiteStructuredData } from "@/lib/seo/structured-data";
 import { instrumentSerif, manrope } from "../fonts";
 import "../globals.css";
 
@@ -66,6 +68,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   setRequestLocale(locale);
 
+  const t = await getTranslations("Metadata");
+  const structuredData = buildSiteStructuredData(locale, t("title"), t("description"));
+
   return (
     <html
       lang={locale}
@@ -76,6 +81,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <ThemeScript />
       </head>
       <body className="flex min-h-dvh flex-col">
+        <JsonLd data={structuredData} />
         <NextIntlClientProvider>
           <SkipLink />
           <CookieBanner />

@@ -8,6 +8,7 @@ import { Projects } from "@/components/sections/Projects";
 import { Services } from "@/components/sections/Services";
 import { Timeline } from "@/components/sections/Timeline";
 import { createPageMetadata } from "@/lib/seo/metadata";
+import { FaqStructuredData } from "@/components/seo/FaqStructuredData";
 
 export const generateMetadata = createPageMetadata("home", "/");
 
@@ -21,6 +22,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
   return (
     <>
+      <FaqStructuredData />
       <Hero />
       <Problems />
       <Services />
